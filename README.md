@@ -27,6 +27,7 @@ The pfhvmnexys48displays_1mcs_v1 and ppm_GUI directories both include something 
 # PPM (hardware files)
 
 To see the hardware schematic designs, you'll need to download the WebPACK version of the Xilinx ISE v 14.7
+The hardware schematics are converted to HDL files which is required to actually program a design onto the FPGA.
 This is a very large piece of software if you do not already have it installed for work with the Xilinx FPGAs. 
 
 
