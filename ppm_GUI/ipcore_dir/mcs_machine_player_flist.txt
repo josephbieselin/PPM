@@ -1,0 +1,18 @@
+# Output products list for <mcs_machine_player>
+mb_bootloop_le.elf
+mcs_machine_player.asy
+mcs_machine_player.bmm
+mcs_machine_player.gise
+mcs_machine_player.ngc
+mcs_machine_player.sym
+mcs_machine_player.vhd
+mcs_machine_player.vho
+mcs_machine_player.xco
+mcs_machine_player.xise
+mcs_machine_player\mb_bootloop_le.elf
+mcs_machine_player\microblaze_mcs_setup.tcl
+mcs_machine_player\system_template.tcl
+mcs_machine_player_flist.txt
+mcs_machine_player_readme.txt
+mcs_machine_player_sdk.xml
+microblaze_mcs_setup.tcl

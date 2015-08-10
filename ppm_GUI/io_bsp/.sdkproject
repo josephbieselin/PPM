@@ -1,0 +1,3 @@
+THIRPARTY=false
+PROCESSOR=mcs_io
+MSS_FILE=system.mss

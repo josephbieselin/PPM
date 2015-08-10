@@ -1,0 +1,8 @@
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_1/system.xml -pe mcs_io io.elf 
+
+ELF file	: io.elf
+elfcheck passed.

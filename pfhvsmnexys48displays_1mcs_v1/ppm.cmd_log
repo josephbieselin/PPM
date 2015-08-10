@@ -1,0 +1,395 @@
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termproject/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termproject/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termproject/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termproject/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termproject/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termproject/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshown/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshown/ppm.syr" 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshown/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshown/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -timing -logic_opt off -ol high -t 1 -register_duplication off -cm area -ir off -pr off -power on -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -pl high -rl high -t 1 -power on ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -timing -logic_opt off -ol high -t 1 -register_duplication off -cm area -ir off -pr off -power on -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -pl high -rl high -t 1 -power on ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -timing -logic_opt off -ol high -t 1 -register_duplication off -cm area -ir off -pr off -power on -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -pl high -rl high -t 1 -power on ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -timing -logic_opt off -ol high -t 1 -register_duplication off -cm area -ir off -pr off -power on -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -pl high -rl high -t 1 -power on ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -timing -logic_opt off -ol high -t 1 -register_duplication off -cm area -ir off -pr off -power on -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -pl high -rl high -t 1 -power on ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -timing -logic_opt off -ol high -t 1 -register_duplication off -cm area -ir off -pr off -power on -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -pl high -rl high -t 1 -power on ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -timing -logic_opt off -ol high -t 1 -register_duplication off -cm area -ir off -pr off -power on -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -pl high -rl high -t 1 -power on ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -timing -logic_opt off -ol high -t 1 -register_duplication off -cm area -ir off -pr off -power on -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -pl high -rl high -t 1 -power on ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -timing -logic_opt off -ol high -t 1 -register_duplication off -cm area -ir off -pr off -power on -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -pl high -rl high -t 1 -power on ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/termprojectnotshownstudents2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/pfhvsm/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/pfhvsm/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/upgradevivekcs2204work/pfhvsm/ppm.xst" -ofn "D:/work/academic/cs2204/upgradevivekcs2204work/pfhvsm/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/fall11/labs/pfhvsm/ppm.xst" -ofn "D:/work/academic/cs2204/fall11/labs/pfhvsm/ppm.syr" 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/fall11/labs/pfhvsm/ppm.xst" -ofn "D:/work/academic/cs2204/fall11/labs/pfhvsm/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-4 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/fall11/labs/pfhvsm/ppm.xst" -ofn "D:/work/academic/cs2204/fall11/labs/pfhvsm/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-4 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/fall11/labs/pfhvsm/ppm.xst" -ofn "D:/work/academic/cs2204/fall11/labs/pfhvsm/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-4 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/fall11/labs/pfhvsm/ppm.xst" -ofn "D:/work/academic/cs2204/fall11/labs/pfhvsm/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204v3/fall12/labs/pfhvsm/ppm.xst" -ofn "D:/work/academic/cs2204v3/fall12/labs/pfhvsm/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204v3/fall12/labs/pfhvsm/ppm.xst" -ofn "D:/work/academic/cs2204v3/fall12/labs/pfhvsm/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+sch2sym -intstyle ise -family spartan3e -refsym ppm D:/work/academic/cs2204/fall2015/labs/pfhvsm/ppm.sch D:/work/academic/cs2204/fall2015/labs/pfhvsm/ppm.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl ppm_drc.vhf -w D:/work/academic/cs2204/fall2015/labs/pfhvsm/ppm.sch 
+sch2sym -intstyle ise -family spartan3e -refsym ppm D:/work/academic/cs2204/fall2015/labs/pfhvsm/ppm.sch D:/work/academic/cs2204/fall2015/labs/pfhvsm/ppm.sym 
+sch2sym -intstyle ise -family spartan3e -refsym ppm D:/work/academic/cs2204/fall2015/labs/pfhvsm/ppm.sch D:/work/academic/cs2204/fall2015/labs/pfhvsm/ppm.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl ppm_drc.vhf -w D:/work/academic/cs2204/fall2015/labs/pfhvsm/ppm.sch 
+sch2sym -intstyle ise -family spartan3e -refsym ppm D:/work/academic/cs2204/fall2015/labs/pfhvsm/ppm.sch D:/work/academic/cs2204/fall2015/labs/pfhvsm/ppm.sym 
+sch2sym -intstyle ise -family spartan3e -refsym ppm D:/work/academic/cs2204/fall2015/labs/pfhvsm/ppm.sch D:/work/academic/cs2204/fall2015/labs/pfhvsm/ppm.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym ppm D:/work/academic/cs2204/fall2015/labs/pfhvsm/ppm.sch D:/work/academic/cs2204/fall2015/labs/pfhvsm/ppm.sym 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/fall2015/labs/pfhvsm/ppm.xst" -ofn "D:/work/academic/cs2204/fall2015/labs/pfhvsm/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "D:/work/academic/cs2204/fall2015/labs/pfhvsm/ppm.xst" -ofn "D:/work/academic/cs2204/fall2015/labs/pfhvsm/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "S:/newcs2204/pfhvsmnexys2/ppm.xst" -ofn "S:/newcs2204/pfhvsmnexys2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "S:/newcs2204/pfhvsmnexys2/ppm.xst" -ofn "S:/newcs2204/pfhvsmnexys2/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc3s500e-fg320-5 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -t 1 ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "S:/newcs2204/pfhvsmnexys4new/ppm.xst" -ofn "S:/newcs2204/pfhvsmnexys4new/ppm.syr" 
+xst -intstyle ise -ifn "S:/newcs2204/pfhvsmnexys4new/ppm.xst" -ofn "S:/newcs2204/pfhvsmnexys4new/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc7a100t-csg324-3 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o ppm_map.ncd ppm.ngd ppm.pcf 
+xst -intstyle ise -ifn "S:/newcs2204/pfhvsmnexys4new/ppm.xst" -ofn "S:/newcs2204/pfhvsmnexys4new/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc7a100t-csg324-3 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -mt off ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "S:/newcs2204/pfhvsmnexys4new/ppm.xst" -ofn "S:/newcs2204/pfhvsmnexys4new/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc7a100t-csg324-3 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -mt off ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "S:/newcs2204/pfhvsmnexys4new/ppm.xst" -ofn "S:/newcs2204/pfhvsmnexys4new/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc7a100t-csg324-3 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -mt off ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "S:/newcs2204/pfhvsmnexys4new/ppm.xst" -ofn "S:/newcs2204/pfhvsmnexys4new/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc7a100t-csg324-3 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -mt off ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "S:/newcs2204/pfhvsmnexys4new/ppm.xst" -ofn "S:/newcs2204/pfhvsmnexys4new/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc7a100t-csg324-3 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -mt off ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "S:/newcs2204/pfhvsmnexys4new/ppm.xst" -ofn "S:/newcs2204/pfhvsmnexys4new/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc7a100t-csg324-3 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o ppm_map.ncd ppm.ngd ppm.pcf 
+xst -intstyle ise -ifn "S:/newcs2204/pfhvsmnexys4new/ppm.xst" -ofn "S:/newcs2204/pfhvsmnexys4new/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc7a100t-csg324-3 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o ppm_map.ncd ppm.ngd ppm.pcf 
+xst -intstyle ise -ifn "S:/newcs2204/pfhvsmnexys4new/ppm.xst" -ofn "S:/newcs2204/pfhvsmnexys4new/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc7a100t-csg324-3 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -mt off ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "S:/newcs2204/pfhvsmnexys48displays/ppm.xst" -ofn "S:/newcs2204/pfhvsmnexys48displays/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ppm.ucf -p xc7a100t-csg324-3 ppm.ngc ppm.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -mt off ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "C:/Users/Steven/Desktop/pfhvsmnexys48displays/ppm.xst" -ofn "C:/Users/Steven/Desktop/pfhvsmnexys48displays/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ppm.ucf -p xc7a100t-csg324-3 ppm.ngc ppm.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -mt off ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "C:/Users/Steven/Desktop/pfhvsmnexys48displays_1mcs/ppm.xst" -ofn "C:/Users/Steven/Desktop/pfhvsmnexys48displays_1mcs/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ppm.ucf -p xc7a100t-csg324-3 ppm.ngc ppm.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -mt off ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+xst -intstyle ise -ifn "C:/Users/Steven/Desktop/pfhvsmnexys48displays_1mcs/ppm.xst" -ofn "C:/Users/Steven/Desktop/pfhvsmnexys48displays_1mcs/ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ppm.ucf -p xc7a100t-csg324-3 ppm.ngc ppm.ngd -bm "ipcore_dir/microblaze_mcs.bmm" 
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o ppm_map.ncd ppm.ngd ppm.pcf 
+par -w -intstyle ise -ol high -mt off ppm_map.ncd ppm.ncd ppm.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 
+bitgen -intstyle ise -f ppm.ut ppm.ncd 

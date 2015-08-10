@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\JoeB\Downloads\pfhvsmnexys48displays\ppm.ncd
+OUTFILE=C:\Users\JoeB\Downloads\pfhvsmnexys48displays\ppm.bit
+FAMILY=Artix7
+PART=xc7a100t-3csg324
+WORKINGDIR=C:\Users\JoeB\Downloads\pfhvsmnexys48displays
+LICENSE=WebPack
+USER_INFO=210851707_0_0_330

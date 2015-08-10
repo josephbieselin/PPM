@@ -1,0 +1,34 @@
+07:38:12 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11004	    344	   2460	  13808	   35f0	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+
+07:38:16 Build Finished (took 3s.866ms)
+

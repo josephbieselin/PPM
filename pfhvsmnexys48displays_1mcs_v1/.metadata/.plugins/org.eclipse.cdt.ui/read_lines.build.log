@@ -1,0 +1,36 @@
+11:22:14 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:57:6: warning: unused variable 'bite' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: read_lines.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../read_lines_bsp/microblaze_mcs/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "read_lines.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_lines.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size read_lines.elf  |tee "read_lines.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6706	    408	   2654	   9768	   2628	read_lines.elf
+'Finished building: read_lines.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck read_lines.elf -hw ../../hw_platform_0/system.xml -pe microblaze_mcs  |tee "read_lines.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microblaze_mcs
+read_lines.elf 
+
+ELF file	: read_lines.elf
+elfcheck passed.
+'Finished building: read_lines.elf.elfcheck'
+' '
+
+11:22:20 Build Finished (took 5s.702ms)
+

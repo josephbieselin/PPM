@@ -1,0 +1,4 @@
+vhdl work "ipcore_dir/microblaze_mcs.vhd"
+vhdl work "X74_157.vhf"
+vhdl work "X74_153.vhf"
+vhdl work "ppm.vhf"

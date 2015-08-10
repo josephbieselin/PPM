@@ -1,0 +1,123 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf
+
+Design file:              ppm.ncd
+Physical constraint file: ppm.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLOCK_NP2B
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+TRD1_NP2B   |   10.425(R)|      SLOW  |    0.900(R)|      SLOW  |CLOCK             |   0.000|
+TRD2_NP2B   |   10.062(R)|      SLOW  |    1.055(R)|      SLOW  |CLOCK             |   0.000|
+TRD3_NP2B   |    9.622(R)|      SLOW  |    1.523(R)|      SLOW  |CLOCK             |   0.000|
+UART_RX     |   -0.583(R)|      FAST  |    2.460(R)|      SLOW  |CLOCK             |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock CLOCK_NP2B to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+A0_NB2P     |        17.331(R)|      SLOW  |         5.783(R)|      FAST  |CLOCK             |   0.000|
+A1_NB2P     |        17.878(R)|      SLOW  |         6.060(R)|      FAST  |CLOCK             |   0.000|
+A2_NB2P     |        17.827(R)|      SLOW  |         6.101(R)|      FAST  |CLOCK             |   0.000|
+A3_NB2P     |        17.914(R)|      SLOW  |         6.089(R)|      FAST  |CLOCK             |   0.000|
+ADD_NB2P    |        14.828(R)|      SLOW  |         4.422(R)|      FAST  |CLOCK             |   0.000|
+RD0_NB2P    |        11.388(R)|      SLOW  |         4.246(R)|      FAST  |CLOCK             |   0.000|
+RD1_NB2P    |        10.700(R)|      SLOW  |         4.005(R)|      FAST  |CLOCK             |   0.000|
+RD2_NB2P    |        11.080(R)|      SLOW  |         4.209(R)|      FAST  |CLOCK             |   0.000|
+RD3_NB2P    |        10.907(R)|      SLOW  |         4.116(R)|      FAST  |CLOCK             |   0.000|
+UART_TX     |         9.734(R)|      SLOW  |         3.666(R)|      FAST  |CLOCK             |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLOCK_NP2B
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK_NP2B     |   12.332|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+P1PLAY_NP2B    |CA_NB2P        |   12.007|
+P1PLAY_NP2B    |CB_NB2P        |   11.897|
+P1PLAY_NP2B    |CC_NB2P        |   11.961|
+P1PLAY_NP2B    |CD_NB2P        |   12.415|
+P1PLAY_NP2B    |CE_NB2P        |   11.101|
+P1PLAY_NP2B    |CF_NB2P        |   11.749|
+P1PLAY_NP2B    |CG_NB2P        |   11.980|
+SHPTS_NP2B     |A0_NB2P        |    9.219|
+SHPTS_NP2B     |A1_NB2P        |    9.766|
+SHPTS_NP2B     |A2_NB2P        |    9.715|
+SHPTS_NP2B     |A3_NB2P        |    9.802|
+SHPTS_NP2B     |CA_NB2P        |   12.268|
+SHPTS_NP2B     |CB_NB2P        |   12.158|
+SHPTS_NP2B     |CC_NB2P        |   12.222|
+SHPTS_NP2B     |CD_NB2P        |   12.676|
+SHPTS_NP2B     |CE_NB2P        |   11.362|
+SHPTS_NP2B     |CF_NB2P        |   12.010|
+SHPTS_NP2B     |CG_NB2P        |   12.241|
+TRD1_NP2B      |A0_NB2P        |   15.299|
+TRD1_NP2B      |A1_NB2P        |   15.846|
+TRD1_NP2B      |A2_NB2P        |   15.795|
+TRD1_NP2B      |A3_NB2P        |   15.882|
+TRD1_NP2B      |ADD_NB2P       |   12.796|
+TRD1_NP2B      |RD1_NB2P       |    8.705|
+TRD2_NP2B      |A0_NB2P        |   14.936|
+TRD2_NP2B      |A1_NB2P        |   15.483|
+TRD2_NP2B      |A2_NB2P        |   15.432|
+TRD2_NP2B      |A3_NB2P        |   15.519|
+TRD2_NP2B      |ADD_NB2P       |   12.433|
+TRD2_NP2B      |RD2_NB2P       |    8.713|
+TRD3_NP2B      |A0_NB2P        |   14.496|
+TRD3_NP2B      |A1_NB2P        |   15.043|
+TRD3_NP2B      |A2_NB2P        |   14.992|
+TRD3_NP2B      |A3_NB2P        |   15.079|
+TRD3_NP2B      |ADD_NB2P       |   11.993|
+TRD3_NP2B      |RD3_NB2P       |    8.072|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Jul 23 06:50:52 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 616 MB
+
+
+

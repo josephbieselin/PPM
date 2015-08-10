@@ -1,0 +1,756 @@
+14:22:43 **** Clean-only build of configuration Debug for project read_lines ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  read_lines.elf.size  read_lines.elf.elfcheck  read_lines.elf
+' '
+14:22:43 **** Incremental Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: read_lines.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../read_lines_bsp/microblaze_mcs/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "read_lines.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_lines.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size read_lines.elf  |tee "read_lines.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10370	    352	   2462	  13184	   3380	read_lines.elf
+'Finished building: read_lines.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck read_lines.elf -hw ../../hw_platform_0/system.xml -pe microblaze_mcs  |tee "read_lines.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microblaze_mcs
+read_lines.elf 
+
+ELF file	: read_lines.elf
+elfcheck passed.
+'Finished building: read_lines.elf.elfcheck'
+' '
+14:34:14 **** Auto Build of project read_lines_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe microblaze_mcs \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe microblaze_mcs -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mxl-soft-mul -mno-xl-reorder -mcpu=v8.40.a  -O2
+-c" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mxl-soft-mul -mno-xl-reorder -mcpu=v8.40.a  -O2
+-c" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling bram"
+"Compiling iomodule"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+14:34:33 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+make: Nothing to be done for `all'.
+14:46:57 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:69:5: error: expected identifier or '(' before 'return'
+../src/helloworld.c:70:1: error: expected identifier or '(' before '}' token
+make: *** [src/helloworld.o] Error 1
+14:47:04 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: read_lines.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../read_lines_bsp/microblaze_mcs/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "read_lines.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_lines.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size read_lines.elf  |tee "read_lines.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6658	    408	   2486	   9552	   2550	read_lines.elf
+'Finished building: read_lines.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck read_lines.elf -hw ../../hw_platform_0/system.xml -pe microblaze_mcs  |tee "read_lines.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microblaze_mcs
+read_lines.elf 
+
+ELF file	: read_lines.elf
+elfcheck passed.
+'Finished building: read_lines.elf.elfcheck'
+' '
+14:49:35 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:53:21: error: 'gpo_fot' undeclared (first use in this function)
+../src/helloworld.c:53:21: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Error 1
+14:49:39 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: read_lines.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../read_lines_bsp/microblaze_mcs/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "read_lines.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_lines.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size read_lines.elf  |tee "read_lines.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7674	    408	   2654	  10736	   29f0	read_lines.elf
+'Finished building: read_lines.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck read_lines.elf -hw ../../hw_platform_0/system.xml -pe microblaze_mcs  |tee "read_lines.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microblaze_mcs
+read_lines.elf 
+
+ELF file	: read_lines.elf
+elfcheck passed.
+'Finished building: read_lines.elf.elfcheck'
+' '
+14:49:48 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: read_lines.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../read_lines_bsp/microblaze_mcs/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "read_lines.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_lines.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size read_lines.elf  |tee "read_lines.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11242	    416	   2662	  14320	   37f0	read_lines.elf
+'Finished building: read_lines.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck read_lines.elf -hw ../../hw_platform_0/system.xml -pe microblaze_mcs  |tee "read_lines.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microblaze_mcs
+read_lines.elf 
+
+ELF file	: read_lines.elf
+elfcheck passed.
+'Finished building: read_lines.elf.elfcheck'
+' '
+16:13:05 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:68:4: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat]
+../src/helloworld.c:68:4: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: read_lines.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../read_lines_bsp/microblaze_mcs/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "read_lines.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: read_lines.elf section `.text' will not fit in region `ilmb_cntlr_dlmb_cntlr'
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `ilmb_cntlr_dlmb_cntlr' overflowed by 49856 bytes
+collect2: ld returned 1 exit status
+make: *** [read_lines.elf] Error 1
+16:13:29 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: read_lines.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../read_lines_bsp/microblaze_mcs/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "read_lines.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: read_lines.elf section `.text' will not fit in region `ilmb_cntlr_dlmb_cntlr'
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `ilmb_cntlr_dlmb_cntlr' overflowed by 49856 bytes
+collect2: ld returned 1 exit status
+make: *** [read_lines.elf] Error 1
+16:13:34 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: read_lines.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../read_lines_bsp/microblaze_mcs/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "read_lines.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: read_lines.elf section `.text' will not fit in region `ilmb_cntlr_dlmb_cntlr'
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `ilmb_cntlr_dlmb_cntlr' overflowed by 49856 bytes
+collect2: ld returned 1 exit status
+make: *** [read_lines.elf] Error 1
+16:41:33 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: read_lines.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../read_lines_bsp/microblaze_mcs/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "read_lines.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_lines.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size read_lines.elf  |tee "read_lines.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23164	   1456	   2716	  27336	   6ac8	read_lines.elf
+'Finished building: read_lines.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck read_lines.elf -hw ../../hw_platform_0/system.xml -pe microblaze_mcs  |tee "read_lines.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microblaze_mcs
+read_lines.elf 
+
+ELF file	: read_lines.elf
+elfcheck passed.
+'Finished building: read_lines.elf.elfcheck'
+' '
+16:45:50 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: read_lines.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../read_lines_bsp/microblaze_mcs/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "read_lines.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_lines.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size read_lines.elf  |tee "read_lines.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23156	   1456	   2716	  27328	   6ac0	read_lines.elf
+'Finished building: read_lines.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck read_lines.elf -hw ../../hw_platform_0/system.xml -pe microblaze_mcs  |tee "read_lines.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microblaze_mcs
+read_lines.elf 
+
+ELF file	: read_lines.elf
+elfcheck passed.
+'Finished building: read_lines.elf.elfcheck'
+' '
+16:48:25 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:64:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: read_lines.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../read_lines_bsp/microblaze_mcs/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "read_lines.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_lines.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size read_lines.elf  |tee "read_lines.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23112	   1452	   2716	  27280	   6a90	read_lines.elf
+'Finished building: read_lines.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck read_lines.elf -hw ../../hw_platform_0/system.xml -pe microblaze_mcs  |tee "read_lines.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microblaze_mcs
+read_lines.elf 
+
+ELF file	: read_lines.elf
+elfcheck passed.
+'Finished building: read_lines.elf.elfcheck'
+' '
+16:51:31 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:64:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: read_lines.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../read_lines_bsp/microblaze_mcs/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "read_lines.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_lines.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size read_lines.elf  |tee "read_lines.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23116	   1452	   2720	  27288	   6a98	read_lines.elf
+'Finished building: read_lines.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck read_lines.elf -hw ../../hw_platform_0/system.xml -pe microblaze_mcs  |tee "read_lines.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microblaze_mcs
+read_lines.elf 
+
+ELF file	: read_lines.elf
+elfcheck passed.
+'Finished building: read_lines.elf.elfcheck'
+' '
+16:55:24 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:64:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: read_lines.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../read_lines_bsp/microblaze_mcs/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "read_lines.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_lines.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size read_lines.elf  |tee "read_lines.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22144	   1452	   2708	  26304	   66c0	read_lines.elf
+'Finished building: read_lines.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck read_lines.elf -hw ../../hw_platform_0/system.xml -pe microblaze_mcs  |tee "read_lines.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microblaze_mcs
+read_lines.elf 
+
+ELF file	: read_lines.elf
+elfcheck passed.
+'Finished building: read_lines.elf.elfcheck'
+' '
+16:57:23 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:57:6: warning: unused variable 'bite' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: read_lines.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../read_lines_bsp/microblaze_mcs/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "read_lines.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_lines.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size read_lines.elf  |tee "read_lines.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6702	    408	   2648	   9758	   261e	read_lines.elf
+'Finished building: read_lines.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck read_lines.elf -hw ../../hw_platform_0/system.xml -pe microblaze_mcs  |tee "read_lines.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microblaze_mcs
+read_lines.elf 
+
+ELF file	: read_lines.elf
+elfcheck passed.
+'Finished building: read_lines.elf.elfcheck'
+' '
+16:59:32 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:64:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: read_lines.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../read_lines_bsp/microblaze_mcs/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "read_lines.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_lines.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size read_lines.elf  |tee "read_lines.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22144	   1452	   2708	  26304	   66c0	read_lines.elf
+'Finished building: read_lines.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck read_lines.elf -hw ../../hw_platform_0/system.xml -pe microblaze_mcs  |tee "read_lines.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microblaze_mcs
+read_lines.elf 
+
+ELF file	: read_lines.elf
+elfcheck passed.
+'Finished building: read_lines.elf.elfcheck'
+' '
+18:16:01 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:64:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: read_lines.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../read_lines_bsp/microblaze_mcs/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "read_lines.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_lines.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size read_lines.elf  |tee "read_lines.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22148	   1452	   2712	  26312	   66c8	read_lines.elf
+'Finished building: read_lines.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck read_lines.elf -hw ../../hw_platform_0/system.xml -pe microblaze_mcs  |tee "read_lines.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microblaze_mcs
+read_lines.elf 
+
+ELF file	: read_lines.elf
+elfcheck passed.
+'Finished building: read_lines.elf.elfcheck'
+' '
+11:07:04 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:64:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+../src/helloworld.c:71:4: warning: implicit declaration of function 'inbyte' [-Wimplicit-function-declaration]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: read_lines.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../read_lines_bsp/microblaze_mcs/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "read_lines.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_lines.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size read_lines.elf  |tee "read_lines.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22256	   1456	   2712	  26424	   6738	read_lines.elf
+'Finished building: read_lines.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck read_lines.elf -hw ../../hw_platform_0/system.xml -pe microblaze_mcs  |tee "read_lines.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microblaze_mcs
+read_lines.elf 
+
+ELF file	: read_lines.elf
+elfcheck passed.
+'Finished building: read_lines.elf.elfcheck'
+' '
+11:07:46 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:64:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: read_lines.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../read_lines_bsp/microblaze_mcs/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "read_lines.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_lines.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size read_lines.elf  |tee "read_lines.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22356	   1456	   2716	  26528	   67a0	read_lines.elf
+'Finished building: read_lines.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck read_lines.elf -hw ../../hw_platform_0/system.xml -pe microblaze_mcs  |tee "read_lines.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microblaze_mcs
+read_lines.elf 
+
+ELF file	: read_lines.elf
+elfcheck passed.
+'Finished building: read_lines.elf.elfcheck'
+' '
+11:08:08 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:64:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: read_lines.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../read_lines_bsp/microblaze_mcs/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "read_lines.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_lines.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size read_lines.elf  |tee "read_lines.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22356	   1456	   2716	  26528	   67a0	read_lines.elf
+'Finished building: read_lines.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck read_lines.elf -hw ../../hw_platform_0/system.xml -pe microblaze_mcs  |tee "read_lines.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microblaze_mcs
+read_lines.elf 
+
+ELF file	: read_lines.elf
+elfcheck passed.
+'Finished building: read_lines.elf.elfcheck'
+' '
+11:08:33 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:64:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: read_lines.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../read_lines_bsp/microblaze_mcs/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "read_lines.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_lines.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size read_lines.elf  |tee "read_lines.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22256	   1456	   2712	  26424	   6738	read_lines.elf
+'Finished building: read_lines.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck read_lines.elf -hw ../../hw_platform_0/system.xml -pe microblaze_mcs  |tee "read_lines.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microblaze_mcs
+read_lines.elf 
+
+ELF file	: read_lines.elf
+elfcheck passed.
+'Finished building: read_lines.elf.elfcheck'
+' '
+11:08:52 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:64:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: read_lines.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../read_lines_bsp/microblaze_mcs/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "read_lines.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_lines.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size read_lines.elf  |tee "read_lines.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22356	   1456	   2716	  26528	   67a0	read_lines.elf
+'Finished building: read_lines.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck read_lines.elf -hw ../../hw_platform_0/system.xml -pe microblaze_mcs  |tee "read_lines.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microblaze_mcs
+read_lines.elf 
+
+ELF file	: read_lines.elf
+elfcheck passed.
+'Finished building: read_lines.elf.elfcheck'
+' '
+11:08:58 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:64:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: read_lines.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../read_lines_bsp/microblaze_mcs/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "read_lines.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_lines.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size read_lines.elf  |tee "read_lines.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22356	   1456	   2716	  26528	   67a0	read_lines.elf
+'Finished building: read_lines.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck read_lines.elf -hw ../../hw_platform_0/system.xml -pe microblaze_mcs  |tee "read_lines.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microblaze_mcs
+read_lines.elf 
+
+ELF file	: read_lines.elf
+elfcheck passed.
+'Finished building: read_lines.elf.elfcheck'
+' '
+11:12:49 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:64:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: read_lines.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../read_lines_bsp/microblaze_mcs/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "read_lines.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_lines.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size read_lines.elf  |tee "read_lines.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10214	    412	   2652	  13278	   33de	read_lines.elf
+'Finished building: read_lines.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck read_lines.elf -hw ../../hw_platform_0/system.xml -pe microblaze_mcs  |tee "read_lines.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microblaze_mcs
+read_lines.elf 
+
+ELF file	: read_lines.elf
+elfcheck passed.
+'Finished building: read_lines.elf.elfcheck'
+' '
+11:22:14 **** Auto Build of configuration Debug for project read_lines ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../read_lines_bsp/microblaze_mcs/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:57:6: warning: unused variable 'bite' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: read_lines.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../read_lines_bsp/microblaze_mcs/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "read_lines.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: read_lines.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size read_lines.elf  |tee "read_lines.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6706	    408	   2654	   9768	   2628	read_lines.elf
+'Finished building: read_lines.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck read_lines.elf -hw ../../hw_platform_0/system.xml -pe microblaze_mcs  |tee "read_lines.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe microblaze_mcs
+read_lines.elf 
+
+ELF file	: read_lines.elf
+elfcheck passed.
+'Finished building: read_lines.elf.elfcheck'
+' '

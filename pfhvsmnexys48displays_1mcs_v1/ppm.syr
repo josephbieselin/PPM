@@ -1,0 +1,1508 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: ppm.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ppm.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ppm"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : ppm
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ipcore_dir\microblaze_mcs.vhd" into library work
+Parsing VHDL file "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\X74_157.vhf" into library work
+Parsing entity <M2_1E_HXILINX_X74_157>.
+Parsing architecture <M2_1E_HXILINX_X74_157_V> of entity <m2_1e_hxilinx_x74_157>.
+Parsing entity <X74_157>.
+Parsing architecture <BEHAVIORAL> of entity <x74_157>.
+Parsing VHDL file "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\X74_153.vhf" into library work
+Parsing entity <M2_1E_MXILINX_X74_153>.
+Parsing architecture <BEHAVIORAL> of entity <m2_1e_mxilinx_x74_153>.
+Parsing entity <M2_1_MXILINX_X74_153>.
+Parsing architecture <BEHAVIORAL> of entity <m2_1_mxilinx_x74_153>.
+Parsing entity <X74_153>.
+Parsing architecture <BEHAVIORAL> of entity <x74_153>.
+Parsing VHDL file "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" into library work
+Parsing entity <FD8CE_HXILINX_ppm>.
+Parsing architecture <Behavioral> of entity <fd8ce_hxilinx_ppm>.
+Parsing entity <CB4CE_HXILINX_ppm>.
+Parsing architecture <Behavioral> of entity <cb4ce_hxilinx_ppm>.
+Parsing entity <M2_1E_HXILINX_ppm>.
+Parsing architecture <M2_1E_HXILINX_ppm_V> of entity <m2_1e_hxilinx_ppm>.
+Parsing entity <ADD4_HXILINX_ppm>.
+Parsing architecture <ADD4_HXILINX_ppm_V> of entity <add4_hxilinx_ppm>.
+Parsing entity <ADD8_HXILINX_ppm>.
+Parsing architecture <ADD8_HXILINX_ppm_V> of entity <add8_hxilinx_ppm>.
+Parsing entity <COMP4_HXILINX_ppm>.
+Parsing architecture <COMP4_HXILINX_ppm_V> of entity <comp4_hxilinx_ppm>.
+Parsing entity <M8_1E_HXILINX_ppm>.
+Parsing architecture <M8_1E_HXILINX_ppm_V> of entity <m8_1e_hxilinx_ppm>.
+Parsing entity <CD4CE_HXILINX_ppm>.
+Parsing architecture <Behavioral> of entity <cd4ce_hxilinx_ppm>.
+Parsing entity <FD4CE_HXILINX_ppm>.
+Parsing architecture <Behavioral> of entity <fd4ce_hxilinx_ppm>.
+Parsing entity <CB16CE_HXILINX_ppm>.
+Parsing architecture <Behavioral> of entity <cb16ce_hxilinx_ppm>.
+Parsing entity <D3_8E_HXILINX_ppm>.
+Parsing architecture <D3_8E_HXILINX_ppm_V> of entity <d3_8e_hxilinx_ppm>.
+Parsing entity <M4_1E_HXILINX_ppm>.
+Parsing architecture <M4_1E_HXILINX_ppm_V> of entity <m4_1e_hxilinx_ppm>.
+Parsing entity <CB4CLE_HXILINX_ppm>.
+Parsing architecture <Behavioral> of entity <cb4cle_hxilinx_ppm>.
+Parsing entity <M2_1_HXILINX_ppm>.
+Parsing architecture <M2_1_HXILINX_ppm_V> of entity <m2_1_hxilinx_ppm>.
+Parsing entity <CB2CE_HXILINX_ppm>.
+Parsing architecture <Behavioral> of entity <cb2ce_hxilinx_ppm>.
+Parsing entity <X74_157_MUSER_ppm>.
+Parsing architecture <BEHAVIORAL> of entity <x74_157_muser_ppm>.
+Parsing entity <X74_153_MUSER_ppm>.
+Parsing architecture <BEHAVIORAL> of entity <x74_153_muser_ppm>.
+Parsing entity <ppm>.
+Parsing architecture <BEHAVIORAL> of entity <ppm>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <ppm> (architecture <BEHAVIORAL>) from library <work>.
+WARNING:HDLCompiler:89 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1293: <microblaze_mcs> remains a black-box since it has no binding entity.
+
+Elaborating entity <CB2CE_HXILINX_ppm> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <CB4CLE_HXILINX_ppm> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <D3_8E_HXILINX_ppm> (architecture <D3_8E_HXILINX_ppm_V>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 483. Case statement is complete. others clause is never selected
+
+Elaborating entity <CB16CE_HXILINX_ppm> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <FD4CE_HXILINX_ppm> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <X74_157_MUSER_ppm> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <M2_1E_HXILINX_ppm> (architecture <M2_1E_HXILINX_ppm_V>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 134. Case statement is complete. others clause is never selected
+
+Elaborating entity <X74_153_MUSER_ppm> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <M2_1_HXILINX_ppm> (architecture <M2_1_HXILINX_ppm_V>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 616. Case statement is complete. others clause is never selected
+
+Elaborating entity <M8_1E_HXILINX_ppm> (architecture <M8_1E_HXILINX_ppm_V>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 281. Case statement is complete. others clause is never selected
+
+Elaborating entity <FD8CE_HXILINX_ppm> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <CD4CE_HXILINX_ppm> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <COMP4_HXILINX_ppm> (architecture <COMP4_HXILINX_ppm_V>) from library <work>.
+
+Elaborating entity <ADD4_HXILINX_ppm> (architecture <ADD4_HXILINX_ppm_V>) from library <work>.
+
+Elaborating entity <M4_1E_HXILINX_ppm> (architecture <M4_1E_HXILINX_ppm_V>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 532. Case statement is complete. others clause is never selected
+
+Elaborating entity <ADD8_HXILINX_ppm> (architecture <ADD8_HXILINX_ppm_V>) from library <work>.
+
+Elaborating entity <CB4CE_HXILINX_ppm> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:634 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1016: Net <gpi1[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1083: Net <P2CODE0> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1084: Net <P2CODE1> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1085: Net <P2CODE2> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1086: Net <P2CODE3> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1087: Net <P2CODE4> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1088: Net <P2CODE5> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1089: Net <P2CODE6> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1090: Net <P2CODE7> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1278: Net <mcs_0_gpi2_openSignal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1279: Net <mcs_0_gpi3_openSignal[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1280: Net <mcs_0_gpi4_openSignal[31]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ppm>.
+    Related source file is "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf".
+    Set property "HU_SET = U6_24" for instance <U6>.
+    Set property "HU_SET = U64_11" for instance <U64>.
+    Set property "HU_SET = U65_12" for instance <U65>.
+    Set property "HU_SET = U66_25" for instance <U66>.
+    Set property "HU_SET = U67_26" for instance <U67>.
+    Set property "HU_SET = U69_27" for instance <U69>.
+    Set property "INIT = 2812" for instance <U104>.
+    Set property "INIT = D860" for instance <U105>.
+    Set property "INIT = D004" for instance <U106>.
+    Set property "INIT = 8692" for instance <U107>.
+    Set property "INIT = 02BA" for instance <U108>.
+    Set property "INIT = 208E" for instance <U109>.
+    Set property "INIT = 1083" for instance <U110>.
+    Set property "HU_SET = U112_10" for instance <U112>.
+    Set property "HU_SET = U113_20" for instance <U113>.
+    Set property "HU_SET = U114_21" for instance <U114>.
+    Set property "HU_SET = U115_22" for instance <U115>.
+    Set property "HU_SET = U116_23" for instance <U116>.
+    Set property "HU_SET = U117_17" for instance <U117>.
+    Set property "HU_SET = U118_18" for instance <U118>.
+    Set property "HU_SET = U119_16" for instance <U119>.
+    Set property "HU_SET = U120_15" for instance <U120>.
+    Set property "HU_SET = U121_14" for instance <U121>.
+    Set property "HU_SET = U122_13" for instance <U122>.
+    Set property "HU_SET = U128_33" for instance <U128>.
+    Set property "HU_SET = U131_32" for instance <U131>.
+    Set property "HU_SET = U132_35" for instance <U132>.
+    Set property "HU_SET = U133_36" for instance <U133>.
+    Set property "HU_SET = U134_34" for instance <U134>.
+    Set property "HU_SET = U135_37" for instance <U135>.
+    Set property "HU_SET = U148_31" for instance <U148>.
+    Set property "HU_SET = U149_30" for instance <U149>.
+    Set property "HU_SET = U150_28" for instance <U150>.
+    Set property "HU_SET = U151_29" for instance <U151>.
+    Set property "HU_SET = U155_19" for instance <U155>.
+    Set property "HU_SET = U159_40" for instance <U159>.
+    Set property "HU_SET = U160_41" for instance <U160>.
+    Set property "HU_SET = U161_39" for instance <U161>.
+    Set property "HU_SET = U162_38" for instance <U162>.
+    Set property "HU_SET = U169_43" for instance <U169>.
+    Set property "HU_SET = U171_44" for instance <U171>.
+    Set property "HU_SET = U176_42" for instance <U176>.
+    Set property "HU_SET = U181_46" for instance <U181>.
+    Set property "HU_SET = U182_45" for instance <U182>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1290>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1290>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1291>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1291>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1292>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1292>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1293>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1293>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1294>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1294>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1295>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1295>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1296>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1296>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1297>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1297>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1298>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1298>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1299>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1299>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1300>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1300>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1301>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1301>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1302>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1302>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1303>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1303>.
+    Set property "SLEW = SLOW" for instance <XLXI_1303>.
+    Set property "DRIVE = 12" for instance <XLXI_1303>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1304>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1304>.
+    Set property "SLEW = SLOW" for instance <XLXI_1304>.
+    Set property "DRIVE = 12" for instance <XLXI_1304>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1305>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1305>.
+    Set property "SLEW = SLOW" for instance <XLXI_1305>.
+    Set property "DRIVE = 12" for instance <XLXI_1305>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1306>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1306>.
+    Set property "SLEW = SLOW" for instance <XLXI_1306>.
+    Set property "DRIVE = 12" for instance <XLXI_1306>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1307>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1307>.
+    Set property "SLEW = SLOW" for instance <XLXI_1307>.
+    Set property "DRIVE = 12" for instance <XLXI_1307>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1308>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1308>.
+    Set property "SLEW = SLOW" for instance <XLXI_1308>.
+    Set property "DRIVE = 12" for instance <XLXI_1308>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1309>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1309>.
+    Set property "SLEW = SLOW" for instance <XLXI_1309>.
+    Set property "DRIVE = 12" for instance <XLXI_1309>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1310>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1310>.
+    Set property "SLEW = SLOW" for instance <XLXI_1310>.
+    Set property "DRIVE = 12" for instance <XLXI_1310>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1311>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1311>.
+    Set property "SLEW = SLOW" for instance <XLXI_1311>.
+    Set property "DRIVE = 12" for instance <XLXI_1311>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1312>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1312>.
+    Set property "SLEW = SLOW" for instance <XLXI_1312>.
+    Set property "DRIVE = 12" for instance <XLXI_1312>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1313>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1313>.
+    Set property "SLEW = SLOW" for instance <XLXI_1313>.
+    Set property "DRIVE = 12" for instance <XLXI_1313>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1314>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1314>.
+    Set property "SLEW = SLOW" for instance <XLXI_1314>.
+    Set property "DRIVE = 12" for instance <XLXI_1314>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1315>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1315>.
+    Set property "SLEW = SLOW" for instance <XLXI_1315>.
+    Set property "DRIVE = 12" for instance <XLXI_1315>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1316>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1316>.
+    Set property "SLEW = SLOW" for instance <XLXI_1316>.
+    Set property "DRIVE = 12" for instance <XLXI_1316>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1317>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1317>.
+    Set property "SLEW = SLOW" for instance <XLXI_1317>.
+    Set property "DRIVE = 12" for instance <XLXI_1317>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1318>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1318>.
+    Set property "SLEW = SLOW" for instance <XLXI_1318>.
+    Set property "DRIVE = 12" for instance <XLXI_1318>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1319>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1319>.
+    Set property "SLEW = SLOW" for instance <XLXI_1319>.
+    Set property "DRIVE = 12" for instance <XLXI_1319>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1320>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1320>.
+    Set property "SLEW = SLOW" for instance <XLXI_1320>.
+    Set property "DRIVE = 12" for instance <XLXI_1320>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1321>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1321>.
+    Set property "SLEW = SLOW" for instance <XLXI_1321>.
+    Set property "DRIVE = 12" for instance <XLXI_1321>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1509>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1509>.
+    Set property "SLEW = SLOW" for instance <XLXI_1509>.
+    Set property "DRIVE = 12" for instance <XLXI_1509>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1510>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1510>.
+    Set property "SLEW = SLOW" for instance <XLXI_1510>.
+    Set property "DRIVE = 12" for instance <XLXI_1510>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1511>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1511>.
+    Set property "SLEW = SLOW" for instance <XLXI_1511>.
+    Set property "DRIVE = 12" for instance <XLXI_1511>.
+    Set property "IOSTANDARD = DEFAULT" for instance <XLXI_1512>.
+    Set property "CAPACITANCE = DONT_CARE" for instance <XLXI_1512>.
+    Set property "SLEW = SLOW" for instance <XLXI_1512>.
+    Set property "DRIVE = 12" for instance <XLXI_1512>.
+    Set property "HU_SET = XLXI_1513_47" for instance <XLXI_1513>.
+    Set property "HU_SET = XLXI_1542_48" for instance <XLXI_1542>.
+    Set property "HU_SET = XLXI_1543_49" for instance <XLXI_1543>.
+    Set property "HU_SET = XLXI_1544_50" for instance <XLXI_1544>.
+    Set property "HU_SET = XLXI_1545_51" for instance <XLXI_1545>.
+    Set property "HU_SET = XLXI_1564_52" for instance <XLXI_1564>.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 1736: Output port <gpo2> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 1736: Output port <gpo3> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 1736: Output port <gpo4> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 1736: Output port <fit1_toggle> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 1736: Output port <fit1_interrupt> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 1736: Output port <intc_irq> of the instance <mcs_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 1801: Output port <O> of the instance <U1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 1827: Output port <CEO> of the instance <U6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 1827: Output port <Q0> of the instance <U6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 1827: Output port <Q1> of the instance <U6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 2148: Output port <CEO> of the instance <U64> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 2148: Output port <Q3> of the instance <U64> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 2148: Output port <TC> of the instance <U64> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 2164: Output port <D7> of the instance <U65> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 2178: Output port <CEO> of the instance <U66> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 2178: Output port <TC> of the instance <U66> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 2186: Output port <CEO> of the instance <U67> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 2186: Output port <TC> of the instance <U67> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 2585: Output port <CEO> of the instance <U119> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 2585: Output port <Q0> of the instance <U119> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 2585: Output port <TC> of the instance <U119> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 2812: Output port <OFL> of the instance <U148> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 2829: Output port <OFL> of the instance <U149> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 2846: Output port <OFL> of the instance <U150> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 2863: Output port <OFL> of the instance <U151> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 3064: Output port <CO> of the instance <U171> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 3064: Output port <OFL> of the instance <U171> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 3064: Output port <S2> of the instance <U171> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 3064: Output port <S3> of the instance <U171> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 3173: Output port <OFL> of the instance <U181> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 3181: Output port <OFL> of the instance <U182> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 3559: Output port <CEO> of the instance <XLXI_1513> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 3559: Output port <Q3> of the instance <XLXI_1513> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" line 3559: Output port <TC> of the instance <XLXI_1513> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <gpi1<31:28>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <mcs_0_gpi2_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <mcs_0_gpi3_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <mcs_0_gpi4_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <P2CODE0> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <P2CODE1> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <P2CODE2> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <P2CODE3> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <P2CODE4> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <P2CODE5> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <P2CODE6> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <P2CODE7> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <ppm> synthesized.
+
+Synthesizing Unit <CB2CE_HXILINX_ppm>.
+    Related source file is "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf".
+    Found 2-bit register for signal <COUNT>.
+    Found 2-bit adder for signal <COUNT[1]_GND_8_o_add_0_OUT> created at line 654.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 D-type flip-flop(s).
+Unit <CB2CE_HXILINX_ppm> synthesized.
+
+Synthesizing Unit <CB4CLE_HXILINX_ppm>.
+    Related source file is "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf".
+    Found 4-bit register for signal <COUNT>.
+    Found 4-bit adder for signal <COUNT[3]_GND_9_o_add_0_OUT> created at line 578.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <CB4CLE_HXILINX_ppm> synthesized.
+
+Synthesizing Unit <D3_8E_HXILINX_ppm>.
+    Related source file is "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <D3_8E_HXILINX_ppm> synthesized.
+
+Synthesizing Unit <CB16CE_HXILINX_ppm>.
+    Related source file is "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf".
+    Found 16-bit register for signal <COUNT>.
+    Found 16-bit adder for signal <COUNT[15]_GND_11_o_add_0_OUT> created at line 429.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+Unit <CB16CE_HXILINX_ppm> synthesized.
+
+Synthesizing Unit <FD4CE_HXILINX_ppm>.
+    Related source file is "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf".
+    Found 1-bit register for signal <Q2>.
+    Found 1-bit register for signal <Q1>.
+    Found 1-bit register for signal <Q0>.
+    Found 1-bit register for signal <Q3>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <FD4CE_HXILINX_ppm> synthesized.
+
+Synthesizing Unit <X74_157_MUSER_ppm>.
+    Related source file is "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf".
+    Set property "HU_SET = XLXI_114_0" for instance <XLXI_114>.
+    Set property "HU_SET = XLXI_115_1" for instance <XLXI_115>.
+    Set property "HU_SET = XLXI_116_2" for instance <XLXI_116>.
+    Set property "HU_SET = XLXI_117_3" for instance <XLXI_117>.
+    Summary:
+	no macro.
+Unit <X74_157_MUSER_ppm> synthesized.
+
+Synthesizing Unit <M2_1E_HXILINX_ppm>.
+    Related source file is "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf".
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <M2_1E_HXILINX_ppm> synthesized.
+
+Synthesizing Unit <X74_153_MUSER_ppm>.
+    Related source file is "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf".
+    Set property "HU_SET = XLXI_1_4" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_5" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_3_6" for instance <XLXI_3>.
+    Set property "HU_SET = XLXI_4_7" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_5_8" for instance <XLXI_5>.
+    Set property "HU_SET = XLXI_6_9" for instance <XLXI_6>.
+    Summary:
+	no macro.
+Unit <X74_153_MUSER_ppm> synthesized.
+
+Synthesizing Unit <M2_1_HXILINX_ppm>.
+    Related source file is "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <M2_1_HXILINX_ppm> synthesized.
+
+Synthesizing Unit <M8_1E_HXILINX_ppm>.
+    Related source file is "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf".
+    Found 1-bit 8-to-1 multiplexer for signal <S2_D7_Mux_0_o> created at line 272.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <M8_1E_HXILINX_ppm> synthesized.
+
+Synthesizing Unit <FD8CE_HXILINX_ppm>.
+    Related source file is "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf".
+    Found 8-bit register for signal <Q>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <FD8CE_HXILINX_ppm> synthesized.
+
+Synthesizing Unit <CD4CE_HXILINX_ppm>.
+    Related source file is "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf".
+    Found 4-bit register for signal <COUNT>.
+    Found 4-bit adder for signal <COUNT[3]_GND_19_o_add_4_OUT> created at line 332.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   9 Multiplexer(s).
+Unit <CD4CE_HXILINX_ppm> synthesized.
+
+Synthesizing Unit <COMP4_HXILINX_ppm>.
+    Related source file is "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf".
+    Summary:
+Unit <COMP4_HXILINX_ppm> synthesized.
+
+Synthesizing Unit <ADD4_HXILINX_ppm>.
+    Related source file is "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf".
+    Found 5-bit adder for signal <n0024> created at line 176.
+    Found 5-bit adder for signal <adsu_p.adsu_tmp> created at line 176.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+Unit <ADD4_HXILINX_ppm> synthesized.
+
+Synthesizing Unit <M4_1E_HXILINX_ppm>.
+    Related source file is "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf".
+    Found 1-bit 4-to-1 multiplexer for signal <S1_D3_Mux_0_o> created at line 527.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <M4_1E_HXILINX_ppm> synthesized.
+
+Synthesizing Unit <ADD8_HXILINX_ppm>.
+    Related source file is "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf".
+    Found 9-bit adder for signal <n0022> created at line 208.
+    Found 9-bit adder for signal <adder_tmp> created at line 208.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+Unit <ADD8_HXILINX_ppm> synthesized.
+
+Synthesizing Unit <CB4CE_HXILINX_ppm>.
+    Related source file is "C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf".
+    Found 4-bit register for signal <COUNT>.
+    Found 4-bit adder for signal <COUNT[3]_GND_24_o_add_0_OUT> created at line 92.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+Unit <CB4CE_HXILINX_ppm> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 20
+ 16-bit adder                                          : 2
+ 2-bit adder                                           : 1
+ 4-bit adder                                           : 3
+ 5-bit adder                                           : 10
+ 9-bit adder                                           : 4
+# Registers                                            : 48
+ 1-bit register                                        : 40
+ 16-bit register                                       : 2
+ 2-bit register                                        : 1
+ 4-bit register                                        : 3
+ 8-bit register                                        : 2
+# Multiplexers                                         : 165
+ 1-bit 2-to-1 multiplexer                              : 147
+ 1-bit 4-to-1 multiplexer                              : 2
+ 1-bit 8-to-1 multiplexer                              : 5
+ 4-bit 2-to-1 multiplexer                              : 9
+ 8-bit 2-to-1 multiplexer                              : 2
+# Xors                                                 : 32
+ 1-bit xor2                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/microblaze_mcs.ngc>.
+Loading core <microblaze_mcs> for timing and area information for instance <mcs_0>.
+INFO:Xst:1901 - Instance U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[15].RAMB36_I1 in unit U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[15].RAMB36_I1 of type RAMB36 has been replaced by RAMB36E1
+INFO:Xst:1901 - Instance U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[14].RAMB36_I1 in unit U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[14].RAMB36_I1 of type RAMB36 has been replaced by RAMB36E1
+INFO:Xst:1901 - Instance U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[13].RAMB36_I1 in unit U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[13].RAMB36_I1 of type RAMB36 has been replaced by RAMB36E1
+INFO:Xst:1901 - Instance U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[12].RAMB36_I1 in unit U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[12].RAMB36_I1 of type RAMB36 has been replaced by RAMB36E1
+INFO:Xst:1901 - Instance U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[11].RAMB36_I1 in unit U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[11].RAMB36_I1 of type RAMB36 has been replaced by RAMB36E1
+INFO:Xst:1901 - Instance U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[10].RAMB36_I1 in unit U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[10].RAMB36_I1 of type RAMB36 has been replaced by RAMB36E1
+INFO:Xst:1901 - Instance U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[9].RAMB36_I1 in unit U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[9].RAMB36_I1 of type RAMB36 has been replaced by RAMB36E1
+INFO:Xst:1901 - Instance U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[8].RAMB36_I1 in unit U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[8].RAMB36_I1 of type RAMB36 has been replaced by RAMB36E1
+INFO:Xst:1901 - Instance U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[7].RAMB36_I1 in unit U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[7].RAMB36_I1 of type RAMB36 has been replaced by RAMB36E1
+INFO:Xst:1901 - Instance U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[6].RAMB36_I1 in unit U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[6].RAMB36_I1 of type RAMB36 has been replaced by RAMB36E1
+INFO:Xst:1901 - Instance U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[5].RAMB36_I1 in unit U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[5].RAMB36_I1 of type RAMB36 has been replaced by RAMB36E1
+INFO:Xst:1901 - Instance U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[4].RAMB36_I1 in unit U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[4].RAMB36_I1 of type RAMB36 has been replaced by RAMB36E1
+INFO:Xst:1901 - Instance U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[3].RAMB36_I1 in unit U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[3].RAMB36_I1 of type RAMB36 has been replaced by RAMB36E1
+INFO:Xst:1901 - Instance U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[2].RAMB36_I1 in unit U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[2].RAMB36_I1 of type RAMB36 has been replaced by RAMB36E1
+INFO:Xst:1901 - Instance U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[1].RAMB36_I1 in unit U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[1].RAMB36_I1 of type RAMB36 has been replaced by RAMB36E1
+INFO:Xst:1901 - Instance U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[0].RAMB36_I1 in unit U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[0].RAMB36_I1 of type RAMB36 has been replaced by RAMB36E1
+
+Synthesizing (advanced) Unit <CB16CE_HXILINX_ppm>.
+The following registers are absorbed into counter <COUNT>: 1 register on signal <COUNT>.
+Unit <CB16CE_HXILINX_ppm> synthesized (advanced).
+
+Synthesizing (advanced) Unit <CB2CE_HXILINX_ppm>.
+The following registers are absorbed into counter <COUNT>: 1 register on signal <COUNT>.
+Unit <CB2CE_HXILINX_ppm> synthesized (advanced).
+
+Synthesizing (advanced) Unit <CB4CE_HXILINX_ppm>.
+The following registers are absorbed into counter <COUNT>: 1 register on signal <COUNT>.
+Unit <CB4CE_HXILINX_ppm> synthesized (advanced).
+
+Synthesizing (advanced) Unit <CB4CLE_HXILINX_ppm>.
+The following registers are absorbed into counter <COUNT>: 1 register on signal <COUNT>.
+Unit <CB4CLE_HXILINX_ppm> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 8
+ 4-bit adder                                           : 1
+ 5-bit adder carry in                                  : 5
+ 9-bit adder carry in                                  : 2
+# Counters                                             : 5
+ 16-bit up counter                                     : 2
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 2
+# Registers                                            : 75
+ Flip-Flops                                            : 75
+# Multiplexers                                         : 127
+ 1-bit 2-to-1 multiplexer                              : 110
+ 1-bit 4-to-1 multiplexer                              : 2
+ 1-bit 8-to-1 multiplexer                              : 5
+ 4-bit 2-to-1 multiplexer                              : 8
+ 8-bit 2-to-1 multiplexer                              : 2
+# Xors                                                 : 32
+ 1-bit xor2                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ppm> ...
+
+Optimizing unit <FD4CE_HXILINX_ppm> ...
+
+Optimizing unit <FD8CE_HXILINX_ppm> ...
+
+Optimizing unit <X74_153_MUSER_ppm> ...
+
+Optimizing unit <M2_1E_HXILINX_ppm> ...
+
+Optimizing unit <M8_1E_HXILINX_ppm> ...
+
+Optimizing unit <CB4CLE_HXILINX_ppm> ...
+
+Optimizing unit <CB16CE_HXILINX_ppm> ...
+
+Optimizing unit <ADD4_HXILINX_ppm> ...
+
+Optimizing unit <D3_8E_HXILINX_ppm> ...
+
+Optimizing unit <M2_1_HXILINX_ppm> ...
+
+Optimizing unit <M4_1E_HXILINX_ppm> ...
+
+Optimizing unit <COMP4_HXILINX_ppm> ...
+
+Optimizing unit <CB2CE_HXILINX_ppm> ...
+
+Optimizing unit <ADD8_HXILINX_ppm> ...
+
+Optimizing unit <CB4CE_HXILINX_ppm> ...
+
+Optimizing unit <CD4CE_HXILINX_ppm> ...
+WARNING:Xst:2677 - Node <COUNT_3> of sequential type is unconnected in block <U64>.
+WARNING:Xst:2677 - Node <COUNT_9> of sequential type is unconnected in block <U67>.
+WARNING:Xst:2677 - Node <COUNT_10> of sequential type is unconnected in block <U67>.
+WARNING:Xst:2677 - Node <COUNT_11> of sequential type is unconnected in block <U67>.
+WARNING:Xst:2677 - Node <COUNT_12> of sequential type is unconnected in block <U67>.
+WARNING:Xst:2677 - Node <COUNT_13> of sequential type is unconnected in block <U67>.
+WARNING:Xst:2677 - Node <COUNT_14> of sequential type is unconnected in block <U67>.
+WARNING:Xst:2677 - Node <COUNT_15> of sequential type is unconnected in block <U67>.
+WARNING:Xst:2677 - Node <COUNT_3> of sequential type is unconnected in block <XLXI_1513>.
+WARNING:Xst:1290 - Hierarchical block <U173/XLXI_3> is unconnected in block <ppm>.
+   It will be removed from the design.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ppm, actual ratio is 1.
+INFO:Xst:2260 - The FF/Latch <U0/ilmb/POR_FF_I> in Unit <mcs_0> is equivalent to the following FF/Latch : <U0/dlmb/POR_FF_I> 
+INFO:Xst:2260 - The FF/Latch <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[31].fdr_i> in Unit <mcs_0> is equivalent to the following 30 FFs/Latches : <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[30].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[29].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[28].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[27].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[26].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[25].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[24].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[23].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[22].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[21].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[20].fdr_i>
+   <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[19].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[18].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[17].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[16].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[15].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[14].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[13].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[12].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[11].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[10].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[9].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[8].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[6].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[5].fdr_i>
+   <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[4].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[3].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[2].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[1].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[0].fdr_i> 
+INFO:Xst:2260 - The FF/Latch <U0/ilmb/POR_FF_I> in Unit <mcs_0> is equivalent to the following FF/Latch : <U0/dlmb/POR_FF_I> 
+INFO:Xst:2260 - The FF/Latch <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[31].fdr_i> in Unit <mcs_0> is equivalent to the following 30 FFs/Latches : <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[30].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[29].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[28].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[27].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[26].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[25].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[24].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[23].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[22].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[21].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[20].fdr_i>
+   <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[19].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[18].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[17].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[16].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[15].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[14].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[13].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[12].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[11].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[10].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[9].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[8].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[6].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[5].fdr_i>
+   <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[4].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[3].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[2].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[1].fdr_i> <U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[0].fdr_i> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 108
+ Flip-Flops                                            : 108
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ppm.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1362
+#      AND2                        : 31
+#      AND2B1                      : 10
+#      AND3                        : 6
+#      AND3B1                      : 7
+#      AND3B2                      : 3
+#      BUF                         : 46
+#      GND                         : 20
+#      INV                         : 49
+#      LUT1                        : 24
+#      LUT2                        : 71
+#      LUT3                        : 143
+#      LUT4                        : 316
+#      LUT5                        : 69
+#      LUT6                        : 133
+#      LUT6_2                      : 90
+#      MULT_AND                    : 3
+#      MUXCY                       : 39
+#      MUXCY_L                     : 76
+#      MUXF5                       : 66
+#      MUXF6                       : 1
+#      MUXF7                       : 6
+#      OR2                         : 19
+#      OR2B1                       : 7
+#      OR3                         : 4
+#      OR4                         : 3
+#      ROM16X1                     : 7
+#      VCC                         : 20
+#      XORCY                       : 93
+# FlipFlops/Latches                : 820
+#      FD                          : 128
+#      FDC                         : 4
+#      FDCE                        : 98
+#      FDE                         : 111
+#      FDR                         : 202
+#      FDRE                        : 249
+#      FDS                         : 9
+#      FDSE                        : 19
+# RAMS                             : 80
+#      RAM32X1D                    : 64
+#      RAMB36E1                    : 16
+# Shift Registers                  : 59
+#      SRL16E                      : 58
+#      SRLC16E                     : 1
+# Clock Buffers                    : 4
+#      BUFG                        : 4
+# IO Buffers                       : 38
+#      IBUF                        : 14
+#      OBUF                        : 24
+# Logical                          : 8
+#      NAND2                       : 4
+#      NOR2                        : 2
+#      NOR3                        : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             819  out of  126800     0%  
+ Number of Slice LUTs:                 1089  out of  63400     1%  
+    Number used as Logic:               895  out of  63400     1%  
+    Number used as Memory:              194  out of  19000     1%  
+       Number used as RAM:              128
+       Number used as ROM:                7
+       Number used as SRL:               59
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1908
+   Number with an unused Flip Flop:    1089  out of   1908    57%  
+   Number with an unused LUT:           819  out of   1908    42%  
+   Number of fully used LUT-FF pairs:     0  out of   1908     0%  
+   Number of unique control sets:        71
+
+IO Utilization: 
+ Number of IOs:                          54
+ Number of bonded IOBs:                  38  out of    210    18%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               16  out of    135    11%  
+    Number using Block RAM only:         16
+ Number of BUFG/BUFGCTRLs:                4  out of     32    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                                                        | Clock buffer(FF name)                                                                                                              | Load  |
+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+-------+
+U67/COUNT_4                                                         | BUFG                                                                                                                               | 5     |
+U67/COUNT_7                                                         | BUFG                                                                                                                               | 69    |
+U66/COUNT_15                                                        | NONE(U67/COUNT_0)                                                                                                                  | 9     |
+CLOCK_NP2B                                                          | IBUF+BUFG                                                                                                                          | 867   |
+U67/COUNT_0                                                         | NONE(XLXI_1513/COUNT_0)                                                                                                            | 3     |
+U67/COUNT_2                                                         | BUFG                                                                                                                               | 6     |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[15].RAMB36_I1/N0| NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[15].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[15].RAMB36_I1)| 1     |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[14].RAMB36_I1/N0| NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[14].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[14].RAMB36_I1)| 1     |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[13].RAMB36_I1/N0| NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[13].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[13].RAMB36_I1)| 1     |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[12].RAMB36_I1/N0| NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[12].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[12].RAMB36_I1)| 1     |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[11].RAMB36_I1/N0| NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[11].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[11].RAMB36_I1)| 1     |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[10].RAMB36_I1/N0| NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[10].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[10].RAMB36_I1)| 1     |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[9].RAMB36_I1/N0 | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[9].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[9].RAMB36_I1)  | 1     |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[8].RAMB36_I1/N0 | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[8].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[8].RAMB36_I1)  | 1     |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[7].RAMB36_I1/N0 | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[7].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[7].RAMB36_I1)  | 1     |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[6].RAMB36_I1/N0 | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[6].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[6].RAMB36_I1)  | 1     |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[5].RAMB36_I1/N0 | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[5].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[5].RAMB36_I1)  | 1     |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[4].RAMB36_I1/N0 | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[4].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[4].RAMB36_I1)  | 1     |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[3].RAMB36_I1/N0 | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[3].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[3].RAMB36_I1)  | 1     |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[2].RAMB36_I1/N0 | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[2].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[2].RAMB36_I1)  | 1     |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[1].RAMB36_I1/N0 | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[1].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[1].RAMB36_I1)  | 1     |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[0].RAMB36_I1/N0 | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[0].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[0].RAMB36_I1)  | 1     |
+--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                    | Buffer(FF name)                                                                                                                    | Load  |
+--------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+-------+
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[0].RAMB36_I1/N11(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[0].RAMB36_I1/XST_VCC:P)  | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[0].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[0].RAMB36_I1)  | 124   |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[10].RAMB36_I1/N11(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[10].RAMB36_I1/XST_VCC:P)| NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[10].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[10].RAMB36_I1)| 124   |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[11].RAMB36_I1/N11(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[11].RAMB36_I1/XST_VCC:P)| NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[11].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[11].RAMB36_I1)| 124   |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[12].RAMB36_I1/N11(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[12].RAMB36_I1/XST_VCC:P)| NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[12].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[12].RAMB36_I1)| 124   |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[13].RAMB36_I1/N11(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[13].RAMB36_I1/XST_VCC:P)| NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[13].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[13].RAMB36_I1)| 124   |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[14].RAMB36_I1/N11(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[14].RAMB36_I1/XST_VCC:P)| NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[14].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[14].RAMB36_I1)| 124   |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[15].RAMB36_I1/N11(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[15].RAMB36_I1/XST_VCC:P)| NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[15].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[15].RAMB36_I1)| 124   |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[1].RAMB36_I1/N11(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[1].RAMB36_I1/XST_VCC:P)  | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[1].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[1].RAMB36_I1)  | 124   |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[2].RAMB36_I1/N11(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[2].RAMB36_I1/XST_VCC:P)  | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[2].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[2].RAMB36_I1)  | 124   |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[3].RAMB36_I1/N11(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[3].RAMB36_I1/XST_VCC:P)  | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[3].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[3].RAMB36_I1)  | 124   |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[4].RAMB36_I1/N11(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[4].RAMB36_I1/XST_VCC:P)  | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[4].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[4].RAMB36_I1)  | 124   |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[5].RAMB36_I1/N11(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[5].RAMB36_I1/XST_VCC:P)  | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[5].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[5].RAMB36_I1)  | 124   |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[6].RAMB36_I1/N11(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[6].RAMB36_I1/XST_VCC:P)  | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[6].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[6].RAMB36_I1)  | 124   |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[7].RAMB36_I1/N11(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[7].RAMB36_I1/XST_VCC:P)  | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[7].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[7].RAMB36_I1)  | 124   |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[8].RAMB36_I1/N11(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[8].RAMB36_I1/XST_VCC:P)  | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[8].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[8].RAMB36_I1)  | 124   |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[9].RAMB36_I1/N11(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[9].RAMB36_I1/XST_VCC:P)  | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[9].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[9].RAMB36_I1)  | 124   |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[0].RAMB36_I1/N0(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[0].RAMB36_I1/XST_GND:G)   | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[0].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[0].RAMB36_I1)  | 72    |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[10].RAMB36_I1/N0(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[10].RAMB36_I1/XST_GND:G) | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[10].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[10].RAMB36_I1)| 72    |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[11].RAMB36_I1/N0(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[11].RAMB36_I1/XST_GND:G) | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[11].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[11].RAMB36_I1)| 72    |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[12].RAMB36_I1/N0(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[12].RAMB36_I1/XST_GND:G) | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[12].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[12].RAMB36_I1)| 72    |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[13].RAMB36_I1/N0(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[13].RAMB36_I1/XST_GND:G) | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[13].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[13].RAMB36_I1)| 72    |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[14].RAMB36_I1/N0(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[14].RAMB36_I1/XST_GND:G) | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[14].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[14].RAMB36_I1)| 72    |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[15].RAMB36_I1/N0(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[15].RAMB36_I1/XST_GND:G) | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[15].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[15].RAMB36_I1)| 72    |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[1].RAMB36_I1/N0(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[1].RAMB36_I1/XST_GND:G)   | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[1].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[1].RAMB36_I1)  | 72    |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[2].RAMB36_I1/N0(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[2].RAMB36_I1/XST_GND:G)   | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[2].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[2].RAMB36_I1)  | 72    |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[3].RAMB36_I1/N0(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[3].RAMB36_I1/XST_GND:G)   | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[3].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[3].RAMB36_I1)  | 72    |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[4].RAMB36_I1/N0(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[4].RAMB36_I1/XST_GND:G)   | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[4].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[4].RAMB36_I1)  | 72    |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[5].RAMB36_I1/N0(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[5].RAMB36_I1/XST_GND:G)   | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[5].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[5].RAMB36_I1)  | 72    |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[6].RAMB36_I1/N0(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[6].RAMB36_I1/XST_GND:G)   | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[6].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[6].RAMB36_I1)  | 72    |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[7].RAMB36_I1/N0(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[7].RAMB36_I1/XST_GND:G)   | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[7].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[7].RAMB36_I1)  | 72    |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[8].RAMB36_I1/N0(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[8].RAMB36_I1/XST_GND:G)   | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[8].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[8].RAMB36_I1)  | 72    |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[9].RAMB36_I1/N0(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[9].RAMB36_I1/XST_GND:G)   | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[9].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[9].RAMB36_I1)  | 72    |
+mcs_0/N1(mcs_0/XST_GND:G)                                                                                                                         | NONE(mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[2].RAMB36_I1/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[2].RAMB36_I1)  | 64    |
+--------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 13.450ns (Maximum Frequency: 74.349MHz)
+   Minimum input arrival time before clock: 13.007ns
+   Maximum output required time after clock: 8.589ns
+   Maximum combinational path delay: 7.444ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U67/COUNT_7'
+  Clock period: 13.450ns (frequency: 74.349MHz)
+  Total number of paths / destination ports: 5233906 / 135
+-------------------------------------------------------------------------
+Delay:               13.450ns (Levels of Logic = 41)
+  Source:            U64/COUNT_2 (FF)
+  Destination:       U71 (FF)
+  Source Clock:      U67/COUNT_7 rising
+  Destination Clock: U67/COUNT_7 rising
+
+  Data Path: U64/COUNT_2 to U71
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            10   0.361   0.321  COUNT_2 (COUNT_2)
+     end scope: 'U64:Q2'
+     BUF:I->O             13   0.511   0.739  SELPLYR_BUF (SELPLYR)
+     AND2:I1->O            4   0.107   0.309  U124 (XLXN_1346)
+     begin scope: 'XLXI_1287/XLXI_116:S0'
+     LUT4:I3->O           11   0.097   0.557  Mmux_O11 (O)
+     end scope: 'XLXI_1287/XLXI_116:O'
+     begin scope: 'U151:A2'
+     LUT6:I3->O            2   0.097   0.300  Madd_adsu_p.adsu_tmp_Madd_cy<2>11 (Madd_adsu_p.adsu_tmp_Madd_cy<2>)
+     LUT3:I2->O            1   0.097   0.379  Madd_adsu_p.adsu_tmp_Madd_xor<3>11 (S3)
+     end scope: 'U151:S3'
+     begin scope: 'U156/XLXI_4:D0'
+     LUT3:I1->O            1   0.097   0.379  Mmux_O11 (O)
+     end scope: 'U156/XLXI_4:O'
+     begin scope: 'U156/XLXI_6:D1'
+     LUT4:I2->O            1   0.097   0.295  Mmux_O11 (O)
+     end scope: 'U156/XLXI_6:O'
+     begin scope: 'U158/XLXI_117:D1'
+     LUT4:I3->O           15   0.097   0.360  Mmux_O11 (O)
+     end scope: 'U158/XLXI_117:O'
+     begin scope: 'U162:A3'
+     LUT5:I4->O            3   0.097   0.289  EQ (EQ)
+     end scope: 'U162:EQ'
+     BUF:I->O              2   0.511   0.698  RDP3EQ2_BUF (RDP3EQ2)
+     AND2:I0->O            2   0.097   0.697  U163 (RDP3EQ1)
+     AND2:I0->O            1   0.097   0.295  U164 (RDP3EQ0)
+     begin scope: 'U170/XLXI_2:D1'
+     LUT3:I2->O            1   0.097   0.379  Mmux_O11 (O)
+     end scope: 'U170/XLXI_2:O'
+     begin scope: 'U170/XLXI_5:D1'
+     LUT4:I2->O            2   0.097   0.299  Mmux_O11 (O)
+     end scope: 'U170/XLXI_5:O'
+     begin scope: 'U171:CI'
+     LUT3:I2->O            8   0.097   0.312  Madd_adsu_p.adsu_tmp_Madd_xor<1>11 (S1)
+     end scope: 'U171:S1'
+     INV:I->O              1   0.511   0.295  U175 (XLXN_1764)
+     begin scope: 'U176:E'
+     LUT4:I3->O            1   0.097   0.295  Mmux_O11 (O)
+     end scope: 'U176:O'
+     begin scope: 'U182:A<1>'
+     LUT2:I1->O            1   0.097   0.000  Madd_adder_tmp_Madd_lut<1> (Madd_adder_tmp_Madd_lut<1>)
+     MUXCY:S->O            1   0.353   0.000  Madd_adder_tmp_Madd_cy<1> (Madd_adder_tmp_Madd_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_adder_tmp_Madd_cy<2> (Madd_adder_tmp_Madd_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_adder_tmp_Madd_cy<3> (Madd_adder_tmp_Madd_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_adder_tmp_Madd_cy<4> (Madd_adder_tmp_Madd_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_adder_tmp_Madd_cy<5> (Madd_adder_tmp_Madd_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_adder_tmp_Madd_cy<6> (Madd_adder_tmp_Madd_cy<6>)
+     XORCY:CI->O           1   0.370   0.295  Madd_adder_tmp_Madd_xor<7> (S<7>)
+     end scope: 'U182:S<7>'
+     begin scope: 'U181:B<7>'
+     LUT2:I1->O            1   0.097   0.000  Madd_adder_tmp_Madd_lut<7> (Madd_adder_tmp_Madd_lut<7>)
+     MUXCY:S->O            1   0.583   0.683  Madd_adder_tmp_Madd_cy<7> (CO)
+     end scope: 'U181:CO'
+     OR2:I1->O             1   0.107   0.279  U180 (PTOVF)
+     FDCE:D                    0.008          U71
+    ----------------------------------------
+    Total                     13.450ns (4.992ns logic, 8.458ns route)
+                                       (37.1% logic, 62.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U67/COUNT_4'
+  Clock period: 0.653ns (frequency: 1532.567MHz)
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               0.653ns (Levels of Logic = 0)
+  Source:            U19 (FF)
+  Destination:       U20 (FF)
+  Source Clock:      U67/COUNT_4 rising
+  Destination Clock: U67/COUNT_4 rising
+
+  Data Path: U19 to U20
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.361   0.283  U19 (XLXN_10471)
+     FDC:D                     0.008          U20
+    ----------------------------------------
+    Total                      0.653ns (0.369ns logic, 0.283ns route)
+                                       (56.6% logic, 43.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U66/COUNT_15'
+  Clock period: 1.659ns (frequency: 602.664MHz)
+  Total number of paths / destination ports: 45 / 9
+-------------------------------------------------------------------------
+Delay:               1.659ns (Levels of Logic = 10)
+  Source:            U67/COUNT_0 (FF)
+  Destination:       U67/COUNT_8 (FF)
+  Source Clock:      U66/COUNT_15 rising
+  Destination Clock: U66/COUNT_15 rising
+
+  Data Path: U67/COUNT_0 to U67/COUNT_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.361   0.293  COUNT_0 (COUNT_0)
+     INV:I->O              1   0.113   0.000  Mcount_COUNT_lut<0>_INV_0 (Mcount_COUNT_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  Mcount_COUNT_cy<0> (Mcount_COUNT_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_COUNT_cy<1> (Mcount_COUNT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_COUNT_cy<2> (Mcount_COUNT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_COUNT_cy<3> (Mcount_COUNT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_COUNT_cy<4> (Mcount_COUNT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_COUNT_cy<5> (Mcount_COUNT_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_COUNT_cy<6> (Mcount_COUNT_cy<6>)
+     MUXCY:CI->O           0   0.023   0.000  Mcount_COUNT_cy<7> (Mcount_COUNT_cy<7>)
+     XORCY:CI->O           1   0.370   0.000  Mcount_COUNT_xor<8> (Result<8>)
+     FDCE:D                    0.008          COUNT_8
+    ----------------------------------------
+    Total                      1.659ns (1.366ns logic, 0.293ns route)
+                                       (82.3% logic, 17.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLOCK_NP2B'
+  Clock period: 3.726ns (frequency: 268.393MHz)
+  Total number of paths / destination ports: 65921 / 2442
+-------------------------------------------------------------------------
+Delay:               3.726ns (Levels of Logic = 4)
+  Source:            mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[0].SRL16E_I/Use_unisim.MB_SRL16E_I1 (FF)
+  Destination:       mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[15].Operand_Select_Bit_I/Op1_DFF (FF)
+  Source Clock:      CLOCK_NP2B rising
+  Destination Clock: CLOCK_NP2B rising
+
+  Data Path: mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[0].SRL16E_I/Use_unisim.MB_SRL16E_I1 to mcs_0/U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[15].Operand_Select_Bit_I/Op1_DFF
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SRL16E:CLK->Q        22   1.306   0.651  U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/PreFetch_Buffer_I/Using_FPGA.PreFetch_Buffers[0].SRL16E_I/Use_unisim.MB_SRL16E_I1 (U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/instr_OF<0>)
+     LUT4:I0->O            1   0.097   0.511  U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Using_FPGA.OpSel1_SPR_Select_LUT_1 (U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/opsel1_SPR_Select_1)
+     LUT3:I0->O            1   0.097   0.000  U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Using_FPGA.OpSel1_SPR_Select_LUT_4 (U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/opsel1_SPR_Select)
+     MUXCY_L:S->LO        32   0.583   0.386  U0/microblaze_I/MicroBlaze_Core_I/Area.Decode_I/Using_FPGA.Using_Breakable_Pipe.OpSel1_SPR_MUXCY_1 (U0/microblaze_I/MicroBlaze_Core_I/Area.opsel1_SPR)
+     LUT6_2:I5->O6         1   0.086   0.000  U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[16].Operand_Select_Bit_I/Using_LUT6_1.Only_PC.Op1_LUT6 (U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[16].Operand_Select_Bit_I/op1_I)
+     FDRE:D                    0.008          U0/microblaze_I/MicroBlaze_Core_I/Area.Data_Flow_I/Operand_Select_I/Using_FPGA.OpSelect_Bits[16].Operand_Select_Bit_I/Op1_DFF
+    ----------------------------------------
+    Total                      3.726ns (2.177ns logic, 1.549ns route)
+                                       (58.4% logic, 41.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U67/COUNT_0'
+  Clock period: 1.124ns (frequency: 889.759MHz)
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Delay:               1.124ns (Levels of Logic = 1)
+  Source:            XLXI_1513/COUNT_0 (FF)
+  Destination:       XLXI_1513/COUNT_0 (FF)
+  Source Clock:      U67/COUNT_0 rising
+  Destination Clock: U67/COUNT_0 rising
+
+  Data Path: XLXI_1513/COUNT_0 to XLXI_1513/COUNT_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            19   0.361   0.363  COUNT_0 (COUNT_0)
+     INV:I->O              1   0.113   0.279  Mcount_COUNT_xor<0>11_INV_0 (Result<0>)
+     FDCE:D                    0.008          COUNT_0
+    ----------------------------------------
+    Total                      1.124ns (0.482ns logic, 0.642ns route)
+                                       (42.9% logic, 57.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U67/COUNT_2'
+  Clock period: 1.055ns (frequency: 948.227MHz)
+  Total number of paths / destination ports: 11 / 4
+-------------------------------------------------------------------------
+Delay:               1.055ns (Levels of Logic = 1)
+  Source:            U119/COUNT_0 (FF)
+  Destination:       U119/COUNT_0 (FF)
+  Source Clock:      U67/COUNT_2 rising
+  Destination Clock: U67/COUNT_2 rising
+
+  Data Path: U119/COUNT_0 to U119/COUNT_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.361   0.293  COUNT_0 (COUNT_0)
+     INV:I->O              1   0.113   0.279  Mmux_COUNT[3]_GND_19_o_mux_8_OUT11_INV_0 (COUNT[3]_GND_19_o_mux_8_OUT<0>)
+     FDCE:D                    0.008          COUNT_0
+    ----------------------------------------
+    Total                      1.055ns (0.482ns logic, 0.573ns route)
+                                       (45.7% logic, 54.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U67/COUNT_4'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.200ns (Levels of Logic = 2)
+  Source:            RESET_NP2B (PAD)
+  Destination:       U19 (FF)
+  Destination Clock: U67/COUNT_4 rising
+
+  Data Path: RESET_NP2B to U19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.001   0.293  XLXI_1300 (RESET)
+     BUF:I->O             34   0.511   0.386  CLEAR_BUF (CLEAR)
+     FDC:D                     0.008          U19
+    ----------------------------------------
+    Total                      1.200ns (0.520ns logic, 0.680ns route)
+                                       (43.3% logic, 56.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U67/COUNT_7'
+  Total number of paths / destination ports: 6102369 / 96
+-------------------------------------------------------------------------
+Offset:              13.007ns (Levels of Logic = 41)
+  Source:            P1SEL0_NP2B (PAD)
+  Destination:       U71 (FF)
+  Destination Clock: U67/COUNT_7 rising
+
+  Data Path: P1SEL0_NP2B to U71
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.001   0.707  XLXI_1293 (P1SEL<0>)
+     OR4:I0->O             1   0.097   0.693  U123 (XLXN_1347)
+     AND2:I0->O            4   0.097   0.309  U124 (XLXN_1346)
+     begin scope: 'XLXI_1287/XLXI_116:S0'
+     LUT4:I3->O           11   0.097   0.557  Mmux_O11 (O)
+     end scope: 'XLXI_1287/XLXI_116:O'
+     begin scope: 'U151:A2'
+     LUT6:I3->O            2   0.097   0.300  Madd_adsu_p.adsu_tmp_Madd_cy<2>11 (Madd_adsu_p.adsu_tmp_Madd_cy<2>)
+     LUT3:I2->O            1   0.097   0.379  Madd_adsu_p.adsu_tmp_Madd_xor<3>11 (S3)
+     end scope: 'U151:S3'
+     begin scope: 'U156/XLXI_4:D0'
+     LUT3:I1->O            1   0.097   0.379  Mmux_O11 (O)
+     end scope: 'U156/XLXI_4:O'
+     begin scope: 'U156/XLXI_6:D1'
+     LUT4:I2->O            1   0.097   0.295  Mmux_O11 (O)
+     end scope: 'U156/XLXI_6:O'
+     begin scope: 'U158/XLXI_117:D1'
+     LUT4:I3->O           15   0.097   0.360  Mmux_O11 (O)
+     end scope: 'U158/XLXI_117:O'
+     begin scope: 'U162:A3'
+     LUT5:I4->O            3   0.097   0.289  EQ (EQ)
+     end scope: 'U162:EQ'
+     BUF:I->O              2   0.511   0.698  RDP3EQ2_BUF (RDP3EQ2)
+     AND2:I0->O            2   0.097   0.697  U163 (RDP3EQ1)
+     AND2:I0->O            1   0.097   0.295  U164 (RDP3EQ0)
+     begin scope: 'U170/XLXI_2:D1'
+     LUT3:I2->O            1   0.097   0.379  Mmux_O11 (O)
+     end scope: 'U170/XLXI_2:O'
+     begin scope: 'U170/XLXI_5:D1'
+     LUT4:I2->O            2   0.097   0.299  Mmux_O11 (O)
+     end scope: 'U170/XLXI_5:O'
+     begin scope: 'U171:CI'
+     LUT3:I2->O            8   0.097   0.312  Madd_adsu_p.adsu_tmp_Madd_xor<1>11 (S1)
+     end scope: 'U171:S1'
+     INV:I->O              1   0.511   0.295  U175 (XLXN_1764)
+     begin scope: 'U176:E'
+     LUT4:I3->O            1   0.097   0.295  Mmux_O11 (O)
+     end scope: 'U176:O'
+     begin scope: 'U182:A<1>'
+     LUT2:I1->O            1   0.097   0.000  Madd_adder_tmp_Madd_lut<1> (Madd_adder_tmp_Madd_lut<1>)
+     MUXCY:S->O            1   0.353   0.000  Madd_adder_tmp_Madd_cy<1> (Madd_adder_tmp_Madd_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_adder_tmp_Madd_cy<2> (Madd_adder_tmp_Madd_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_adder_tmp_Madd_cy<3> (Madd_adder_tmp_Madd_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_adder_tmp_Madd_cy<4> (Madd_adder_tmp_Madd_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_adder_tmp_Madd_cy<5> (Madd_adder_tmp_Madd_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_adder_tmp_Madd_cy<6> (Madd_adder_tmp_Madd_cy<6>)
+     XORCY:CI->O           1   0.370   0.295  Madd_adder_tmp_Madd_xor<7> (S<7>)
+     end scope: 'U182:S<7>'
+     begin scope: 'U181:B<7>'
+     LUT2:I1->O            1   0.097   0.000  Madd_adder_tmp_Madd_lut<7> (Madd_adder_tmp_Madd_lut<7>)
+     MUXCY:S->O            1   0.583   0.683  Madd_adder_tmp_Madd_cy<7> (CO)
+     end scope: 'U181:CO'
+     OR2:I1->O             1   0.107   0.279  U180 (PTOVF)
+     FDCE:D                    0.008          U71
+    ----------------------------------------
+    Total                     13.007ns (4.208ns logic, 8.799ns route)
+                                       (32.4% logic, 67.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLOCK_NP2B'
+  Total number of paths / destination ports: 21 / 5
+-------------------------------------------------------------------------
+Offset:              3.163ns (Levels of Logic = 7)
+  Source:            P1SEL0_NP2B (PAD)
+  Destination:       mcs_0/U0/iomodule_0/IOModule_Core_I1/GPI_I1/GPI_In_16 (FF)
+  Destination Clock: CLOCK_NP2B rising
+
+  Data Path: P1SEL0_NP2B to mcs_0/U0/iomodule_0/IOModule_Core_I1/GPI_I1/GPI_In_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.001   0.707  XLXI_1293 (P1SEL<0>)
+     OR4:I0->O             1   0.097   0.693  U123 (XLXN_1347)
+     AND2:I0->O            4   0.097   0.309  U124 (XLXN_1346)
+     begin scope: 'XLXI_1287/XLXI_114:S0'
+     LUT4:I3->O           19   0.097   0.363  Mmux_O11 (O)
+     end scope: 'XLXI_1287/XLXI_114:O'
+     BUF:I->O              1   0.511   0.279  XLXI_1329 (gpi1<16>)
+     begin scope: 'mcs_0:gpi1<16>'
+     FDR:D                     0.008          U0/iomodule_0/IOModule_Core_I1/GPI_I1/GPI_In_16
+    ----------------------------------------
+    Total                      3.163ns (0.811ns logic, 2.352ns route)
+                                       (25.6% logic, 74.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U67/COUNT_2'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              0.302ns (Levels of Logic = 1)
+  Source:            P1PLAY_NP2B (PAD)
+  Destination:       U76 (FF)
+  Destination Clock: U67/COUNT_2 rising
+
+  Data Path: P1PLAY_NP2B to U76
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.001   0.293  XLXI_1298 (P1PLAY)
+     FD:D                      0.008          U76
+    ----------------------------------------
+    Total                      0.302ns (0.009ns logic, 0.293ns route)
+                                       (3.0% logic, 97.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U67/COUNT_7'
+  Total number of paths / destination ports: 997 / 23
+-------------------------------------------------------------------------
+Offset:              8.490ns (Levels of Logic = 13)
+  Source:            U64/COUNT_0 (FF)
+  Destination:       A0_NB2P (PAD)
+  Source Clock:      U67/COUNT_7 rising
+
+  Data Path: U64/COUNT_0 to A0_NB2P
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            11   0.361   0.558  COUNT_0 (COUNT_0)
+     end scope: 'U64:Q0'
+     begin scope: 'U65:A0'
+     LUT3:I0->O           10   0.097   0.725  Mmux_d_tmp21 (D1)
+     end scope: 'U65:D1'
+     AND2:I1->O            1   0.107   0.556  U25 (XLXN_9714)
+     OR3:I2->O             1   0.234   0.683  U24 (XLXN_9551)
+     AND2B1:I1->O          6   0.107   0.716  U23 (ADD)
+     AND2:I0->O            2   0.097   0.697  U37 (INT_NET2)
+     AND2B1:I0->O          1   0.097   0.693  U35 (BPDS)
+     OR2B1:I0->O           1   0.097   0.693  U88 (XLXN_203)
+     AND2:I0->O            4   0.097   0.697  U89 (INT_NET0)
+     OR2B1:I1->O           1   0.107   0.683  U92 (XLXN_181)
+     NAND2:I1->O           1   0.107   0.279  U93 (DISPEN<0>)
+     OBUF:I->O                 0.000          XLXI_1313 (A0_NB2P)
+    ----------------------------------------
+    Total                      8.490ns (1.508ns logic, 6.982ns route)
+                                       (17.8% logic, 82.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLOCK_NP2B'
+  Total number of paths / destination ports: 10 / 6
+-------------------------------------------------------------------------
+Offset:              8.589ns (Levels of Logic = 12)
+  Source:            mcs_0/U0/iomodule_0/IOModule_Core_I1/GPO_I1/gpo_io_i_0 (FF)
+  Destination:       A0_NB2P (PAD)
+  Source Clock:      CLOCK_NP2B rising
+
+  Data Path: mcs_0/U0/iomodule_0/IOModule_Core_I1/GPO_I1/gpo_io_i_0 to A0_NB2P
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.361   0.279  U0/iomodule_0/IOModule_Core_I1/GPO_I1/gpo_io_i_0 (gpo1<0>)
+     end scope: 'mcs_0:gpo1<0>'
+     BUF:I->O              2   0.511   0.698  XLXI_1331 (P2ADD)
+     AND2:I0->O            1   0.097   0.683  U26 (XLXN_149)
+     OR3:I1->O             1   0.107   0.683  U24 (XLXN_9551)
+     AND2B1:I1->O          6   0.107   0.716  U23 (ADD)
+     AND2:I0->O            2   0.097   0.697  U37 (INT_NET2)
+     AND2B1:I0->O          1   0.097   0.693  U35 (BPDS)
+     OR2B1:I0->O           1   0.097   0.693  U88 (XLXN_203)
+     AND2:I0->O            4   0.097   0.697  U89 (INT_NET0)
+     OR2B1:I1->O           1   0.107   0.683  U92 (XLXN_181)
+     NAND2:I1->O           1   0.107   0.279  U93 (DISPEN<0>)
+     OBUF:I->O                 0.000          XLXI_1313 (A0_NB2P)
+    ----------------------------------------
+    Total                      8.589ns (1.785ns logic, 6.804ns route)
+                                       (20.8% logic, 79.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U66/COUNT_15'
+  Total number of paths / destination ports: 16 / 8
+-------------------------------------------------------------------------
+Offset:              3.825ns (Levels of Logic = 6)
+  Source:            U67/COUNT_8 (FF)
+  Destination:       A0_NB2P (PAD)
+  Source Clock:      U66/COUNT_15 rising
+
+  Data Path: U67/COUNT_8 to A0_NB2P
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.361   0.693  COUNT_8 (COUNT_8)
+     end scope: 'U67:Q<8>'
+     OR2B1:I1->O           1   0.107   0.693  U88 (XLXN_203)
+     AND2:I0->O            4   0.097   0.697  U89 (INT_NET0)
+     OR2B1:I1->O           1   0.107   0.683  U92 (XLXN_181)
+     NAND2:I1->O           1   0.107   0.279  U93 (DISPEN<0>)
+     OBUF:I->O                 0.000          XLXI_1313 (A0_NB2P)
+    ----------------------------------------
+    Total                      3.825ns (0.779ns logic, 3.046ns route)
+                                       (20.4% logic, 79.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U67/COUNT_0'
+  Total number of paths / destination ports: 164 / 15
+-------------------------------------------------------------------------
+Offset:              2.606ns (Levels of Logic = 6)
+  Source:            XLXI_1513/COUNT_1 (FF)
+  Destination:       CA_NB2P (PAD)
+  Source Clock:      U67/COUNT_0 rising
+
+  Data Path: XLXI_1513/COUNT_1 to CA_NB2P
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            18   0.361   0.772  COUNT_1 (COUNT_1)
+     end scope: 'XLXI_1513:Q1'
+     begin scope: 'XLXI_1543:S1'
+     LUT6:I0->O            1   0.097   0.000  Mmux_S2_D7_Mux_0_o_3 (Mmux_S2_D7_Mux_0_o_3)
+     MUXF7:I1->O           7   0.279   0.307  Mmux_S2_D7_Mux_0_o_2_f7 (O)
+     end scope: 'XLXI_1543:O'
+     ROM16X1:A3->O         1   0.511   0.279  U104 (SBUS<6>)
+     OBUF:I->O                 0.000          XLXI_1321 (CA_NB2P)
+    ----------------------------------------
+    Total                      2.606ns (1.248ns logic, 1.358ns route)
+                                       (47.9% logic, 52.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 765 / 16
+-------------------------------------------------------------------------
+Delay:               7.444ns (Levels of Logic = 11)
+  Source:            P1ADD_NP2B (PAD)
+  Destination:       A0_NB2P (PAD)
+
+  Data Path: P1ADD_NP2B to A0_NB2P
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.001   0.703  XLXI_1297 (P1ADD)
+     AND2:I0->O            1   0.097   0.556  U25 (XLXN_9714)
+     OR3:I2->O             1   0.234   0.683  U24 (XLXN_9551)
+     AND2B1:I1->O          6   0.107   0.716  U23 (ADD)
+     AND2:I0->O            2   0.097   0.697  U37 (INT_NET2)
+     AND2B1:I0->O          1   0.097   0.693  U35 (BPDS)
+     OR2B1:I0->O           1   0.097   0.693  U88 (XLXN_203)
+     AND2:I0->O            4   0.097   0.697  U89 (INT_NET0)
+     OR2B1:I1->O           1   0.107   0.683  U92 (XLXN_181)
+     NAND2:I1->O           1   0.107   0.279  U93 (DISPEN<0>)
+     OBUF:I->O                 0.000          XLXI_1313 (A0_NB2P)
+    ----------------------------------------
+    Total                      7.444ns (1.041ns logic, 6.403ns route)
+                                       (14.0% logic, 86.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLOCK_NP2B
+--------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------------------------------------+---------+---------+---------+---------+
+CLOCK_NP2B                                                          |    3.726|         |         |         |
+U67/COUNT_7                                                         |    3.606|         |         |         |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[0].RAMB36_I1/N0 |    4.135|         |         |         |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[10].RAMB36_I1/N0|    4.132|         |         |         |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[11].RAMB36_I1/N0|    4.132|         |         |         |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[12].RAMB36_I1/N0|    4.121|         |         |         |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[13].RAMB36_I1/N0|    4.121|         |         |         |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[14].RAMB36_I1/N0|    4.121|         |         |         |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[15].RAMB36_I1/N0|    4.121|         |         |         |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[1].RAMB36_I1/N0 |    4.135|         |         |         |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[2].RAMB36_I1/N0 |    4.135|         |         |         |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[3].RAMB36_I1/N0 |    4.135|         |         |         |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[4].RAMB36_I1/N0 |    4.128|         |         |         |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[5].RAMB36_I1/N0 |    4.128|         |         |         |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[6].RAMB36_I1/N0 |    4.128|         |         |         |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[7].RAMB36_I1/N0 |    4.128|         |         |         |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[8].RAMB36_I1/N0 |    4.132|         |         |         |
+mcs_0/U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[9].RAMB36_I1/N0 |    4.132|         |         |         |
+--------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U66/COUNT_15
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U66/COUNT_15   |    1.659|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U67/COUNT_0
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U67/COUNT_0    |    1.124|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U67/COUNT_2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U67/COUNT_2    |    1.055|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U67/COUNT_4
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U67/COUNT_2    |    0.653|         |         |         |
+U67/COUNT_4    |    0.653|         |         |         |
+U67/COUNT_7    |    1.685|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U67/COUNT_7
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK_NP2B     |   13.269|         |         |         |
+U66/COUNT_15   |    0.658|         |         |         |
+U67/COUNT_2    |    6.780|         |         |         |
+U67/COUNT_4    |    6.780|         |         |         |
+U67/COUNT_7    |   13.450|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 18.46 secs
+ 
+--> 
+
+Total memory usage is 389152 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   35 (   0 filtered)
+Number of infos    :   55 (   0 filtered)
+

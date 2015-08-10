@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="89" delta="old" >"C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1293: &lt;<arg fmt="%s" index="1">microblaze_mcs</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1016: Net &lt;<arg fmt="%s" index="1">gpi1[31]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1083: Net &lt;<arg fmt="%s" index="1">P2CODE0</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1084: Net &lt;<arg fmt="%s" index="1">P2CODE1</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1085: Net &lt;<arg fmt="%s" index="1">P2CODE2</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1086: Net &lt;<arg fmt="%s" index="1">P2CODE3</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1087: Net &lt;<arg fmt="%s" index="1">P2CODE4</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1088: Net &lt;<arg fmt="%s" index="1">P2CODE5</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1089: Net &lt;<arg fmt="%s" index="1">P2CODE6</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1090: Net &lt;<arg fmt="%s" index="1">P2CODE7</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1278: Net &lt;<arg fmt="%s" index="1">mcs_0_gpi2_openSignal[31]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1279: Net &lt;<arg fmt="%s" index="1">mcs_0_gpi3_openSignal[31]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf" Line 1280: Net &lt;<arg fmt="%s" index="1">mcs_0_gpi4_openSignal[31]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">1736</arg>: Output port &lt;<arg fmt="%s" index="3">gpo2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">mcs_0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">1736</arg>: Output port &lt;<arg fmt="%s" index="3">gpo3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">mcs_0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">1736</arg>: Output port &lt;<arg fmt="%s" index="3">gpo4</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">mcs_0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">1736</arg>: Output port &lt;<arg fmt="%s" index="3">fit1_toggle</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">mcs_0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">1736</arg>: Output port &lt;<arg fmt="%s" index="3">fit1_interrupt</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">mcs_0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">1736</arg>: Output port &lt;<arg fmt="%s" index="3">intc_irq</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">mcs_0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">1801</arg>: Output port &lt;<arg fmt="%s" index="3">O</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">1827</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U6</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">1827</arg>: Output port &lt;<arg fmt="%s" index="3">Q0</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U6</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">1827</arg>: Output port &lt;<arg fmt="%s" index="3">Q1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U6</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">2148</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U64</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">2148</arg>: Output port &lt;<arg fmt="%s" index="3">Q3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U64</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">2148</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U64</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">2164</arg>: Output port &lt;<arg fmt="%s" index="3">D7</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U65</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">2178</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U66</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">2178</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U66</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">2186</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U67</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">2186</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U67</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">2585</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U119</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">2585</arg>: Output port &lt;<arg fmt="%s" index="3">Q0</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U119</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">2585</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U119</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">2812</arg>: Output port &lt;<arg fmt="%s" index="3">OFL</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U148</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">2829</arg>: Output port &lt;<arg fmt="%s" index="3">OFL</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U149</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">2846</arg>: Output port &lt;<arg fmt="%s" index="3">OFL</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U150</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">2863</arg>: Output port &lt;<arg fmt="%s" index="3">OFL</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U151</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">3064</arg>: Output port &lt;<arg fmt="%s" index="3">CO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U171</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">3064</arg>: Output port &lt;<arg fmt="%s" index="3">OFL</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U171</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">3064</arg>: Output port &lt;<arg fmt="%s" index="3">S2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U171</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">3064</arg>: Output port &lt;<arg fmt="%s" index="3">S3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U171</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">3173</arg>: Output port &lt;<arg fmt="%s" index="3">OFL</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U181</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">3181</arg>: Output port &lt;<arg fmt="%s" index="3">OFL</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">U182</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">3559</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1513</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">3559</arg>: Output port &lt;<arg fmt="%s" index="3">Q3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1513</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ppm.vhf</arg>&quot; line <arg fmt="%s" index="2">3559</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1513</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">gpi1&lt;31:28&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">mcs_0_gpi2_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">mcs_0_gpi3_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">mcs_0_gpi4_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">P2CODE0</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">P2CODE1</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">P2CODE2</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">P2CODE3</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">P2CODE4</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">P2CODE5</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">P2CODE6</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">P2CODE7</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[15].RAMB36_I1</arg> in unit <arg fmt="%s" index="2">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[15].RAMB36_I1</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[14].RAMB36_I1</arg> in unit <arg fmt="%s" index="2">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[14].RAMB36_I1</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[13].RAMB36_I1</arg> in unit <arg fmt="%s" index="2">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[13].RAMB36_I1</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[12].RAMB36_I1</arg> in unit <arg fmt="%s" index="2">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[12].RAMB36_I1</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[11].RAMB36_I1</arg> in unit <arg fmt="%s" index="2">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[11].RAMB36_I1</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[10].RAMB36_I1</arg> in unit <arg fmt="%s" index="2">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[10].RAMB36_I1</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[9].RAMB36_I1</arg> in unit <arg fmt="%s" index="2">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[9].RAMB36_I1</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[8].RAMB36_I1</arg> in unit <arg fmt="%s" index="2">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[8].RAMB36_I1</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[7].RAMB36_I1</arg> in unit <arg fmt="%s" index="2">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[7].RAMB36_I1</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[6].RAMB36_I1</arg> in unit <arg fmt="%s" index="2">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[6].RAMB36_I1</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[5].RAMB36_I1</arg> in unit <arg fmt="%s" index="2">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[5].RAMB36_I1</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[4].RAMB36_I1</arg> in unit <arg fmt="%s" index="2">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[4].RAMB36_I1</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[3].RAMB36_I1</arg> in unit <arg fmt="%s" index="2">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[3].RAMB36_I1</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[2].RAMB36_I1</arg> in unit <arg fmt="%s" index="2">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[2].RAMB36_I1</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[1].RAMB36_I1</arg> in unit <arg fmt="%s" index="2">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[1].RAMB36_I1</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[0].RAMB36_I1</arg> in unit <arg fmt="%s" index="2">U0/lmb_bram_I/RAM_Inst/Using_B36_S2.The_BRAMs[0].RAMB36_I1</arg> of type <arg fmt="%s" index="3">RAMB36</arg> has been replaced by <arg fmt="%s" index="4">RAMB36E1</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">COUNT_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U64</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">COUNT_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U67</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">COUNT_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U67</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">COUNT_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U67</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">COUNT_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U67</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">COUNT_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U67</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">COUNT_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U67</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">COUNT_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U67</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">COUNT_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">XLXI_1513</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">U173/XLXI_3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">ppm</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/ilmb/POR_FF_I</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/dlmb/POR_FF_I&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[31].fdr_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">30 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[30].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[29].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[28].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[27].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[26].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[25].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[24].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[23].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[22].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[21].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[20].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[19].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[18].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[17].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[16].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[15].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[14].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[13].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[12].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[11].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[10].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[9].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[8].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[6].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[5].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[4].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[3].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[2].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[1].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[0].fdr_i&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/ilmb/POR_FF_I</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;U0/dlmb/POR_FF_I&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[31].fdr_i</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mcs_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">30 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[30].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[29].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[28].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[27].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[26].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[25].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[24].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[23].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[22].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[21].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[20].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[19].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[18].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[17].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[16].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[15].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[14].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[13].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[12].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[11].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[10].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[9].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[8].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[6].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[5].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[4].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[3].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[2].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[1].fdr_i&gt; &lt;U0/iomodule_0/IOModule_Core_I1/intr_ctrl_I1/cipr_rd_dff_all[0].fdr_i&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

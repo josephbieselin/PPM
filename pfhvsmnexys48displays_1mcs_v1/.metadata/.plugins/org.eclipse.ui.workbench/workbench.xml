@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="20" version="2.0">
+<workbenchAdvisor/>
+<window height="768" maximized="true" width="1024" x="208" y="208">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout>
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="229" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.cdt.ui.CElementCreationActionSet" itemType="typeToolBarContribution" x="167" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
+<coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="com.xilinx.sdk.xbash.toolbar1" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="com.xilinx.sdk.targetmanager.ui.toolbar1" itemType="typeToolBarContribution" x="61" y="22"/>
+<coolItem id="com.xilinx.sdk.sw.toolbar1" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="84" y="22"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1434736813196" focus="true" label="Workspace - C/C++">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" partName="system.mss" path="C:/Users/Steven/Desktop/pfhvsmnexys48displays_1mcs/read_lines_bsp/system.mss" title="system.mss" tooltip="read_lines_bsp/system.mss" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/read_lines_bsp/system.mss"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" partName="helloworld.c" path="C:/Users/Steven/Desktop/pfhvsmnexys48displays_1mcs/read_lines/src/helloworld.c" title="helloworld.c" tooltip="read_lines/src/helloworld.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/read_lines/src/helloworld.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1885" selectionTopPixel="510"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="system_bd.bmm" partName="system_bd.bmm" path="C:/Users/Steven/Desktop/pfhvsmnexys48displays_1mcs/hw_platform_0/system_bd.bmm" title="system_bd.bmm" tooltip="hw_platform_0/system_bd.bmm" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hw_platform_0/system_bd.bmm"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stdio.h" partName="stdio.h" title="stdio.h" tooltip="C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" path="C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h" project="read_lines"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="27376" selectionTopPixel="10130"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="xiomodule.h" partName="xiomodule.h" path="C:/Users/Steven/Desktop/pfhvsmnexys48displays_1mcs/read_lines_bsp/microblaze_mcs/include/xiomodule.h" title="xiomodule.h" tooltip="read_lines_bsp/microblaze_mcs/include/xiomodule.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/read_lines_bsp/microblaze_mcs/include/xiomodule.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="8498"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="inbyte.c" partName="inbyte.c" path="C:/Users/Steven/Desktop/pfhvsmnexys48displays_1mcs/read_lines_bsp/microblaze_mcs/libsrc/standalone_v3_11_a/src/inbyte.c" title="inbyte.c" tooltip="read_lines_bsp/microblaze_mcs/libsrc/standalone_v3_11_a/src/inbyte.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/read_lines_bsp/microblaze_mcs/libsrc/standalone_v3_11_a/src/inbyte.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="198" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="xiomodule_l.c" partName="xiomodule_l.c" path="C:/Users/Steven/Desktop/pfhvsmnexys48displays_1mcs/read_lines_bsp/microblaze_mcs/libsrc/iomodule_v1_04_a/src/xiomodule_l.c" title="xiomodule_l.c" tooltip="read_lines_bsp/microblaze_mcs/libsrc/iomodule_v1_04_a/src/xiomodule_l.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/read_lines_bsp/microblaze_mcs/libsrc/iomodule_v1_04_a/src/xiomodule_l.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="18" selectionOffset="13726" selectionTopPixel="5098"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties"/>
+<view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Target"/>
+<view id="org.eclipse.tm.terminal.view.TerminalView" partName="Terminal"/>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Errors (3 items)"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.eclipse.cdt.ui.CPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.SearchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.CElementCreationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.make.ui.makeTargetActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.buildConfigActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.NavigationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.OpenActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.CodingActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.presentation"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.search.ui.views.SearchView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.cdt.ui.CView"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.tm.terminal.view.TerminalView"/>
+<show_view_action id="org.eclipse.cdt.codan.internal.ui.views.ProblemDetails"/>
+<show_view_action id="org.eclipse.cdt.make.ui.views.MakeView"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.cdt.ui.includeBrowser"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewSourceFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewSourceFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewHeaderFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewClassCreationWizard"/>
+<new_wizard_action id="com.xilinx.sdk.appwiz.AppWizard"/>
+<new_wizard_action id="com.xilinx.sdk.sw.ui.NewBspWizard"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<perspective_action id="org.eclipse.team.ui.TeamSynchronizingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.tm.terminal.view.TerminalView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.cdt.make.ui.views.MakeView"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<page content="org.eclipse.cdt.ui.CView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@2b891172" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottom" ratio="0.74922603" ratioLeft="484" ratioRight="162" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.tm.terminal.view.TerminalView" label="Terminal"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="topRight" ratio="0.7493333" ratioLeft="562" ratioRight="188" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.cdt.make.ui.views.MakeView" label="Make Target"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" path="/hw_platform_0/system.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" path="/read_lines_bsp/system.mss"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/read_lines/src/helloworld.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" path="/hw_platform_0/system.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/hw_platform_0/system_bd.bmm"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/hw_platform_0/system.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/read_lines_bsp/microblaze_mcs/include/xiomodule.h"/>
+<editor factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h" project="read_lines"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/read_lines_bsp/microblaze_mcs/include/xparameters.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/read_lines/src/platform.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/read_lines_bsp/microblaze_mcs/libsrc/standalone_v3_11_a/src/inbyte.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/read_lines_bsp/microblaze_mcs/libsrc/iomodule_v1_04_a/src/xiomodule_l.c"/>
+</editors>
+<item historyLabel="system.xml" index="0"/>
+<item historyLabel="system.mss" index="1"/>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="3977" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="1803" y="0"/>
+</item>
+<item historyLabel="system.xml" index="3"/>
+<item historyLabel="system_bd.bmm" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="310" y="0"/>
+</item>
+<item historyLabel="system.xml" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="system_bd.bmm" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="2011" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="2004" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="87" y="0"/>
+</item>
+<item historyLabel="xiomodule.h" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="stdio.h" index="7">
+<position info="not_deleted" x="24156" y="0"/>
+</item>
+<item historyLabel="stdio.h" index="7">
+<position info="not_deleted" x="7100" y="10"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="51" y="13"/>
+</item>
+<item historyLabel="xparameters.h" index="8">
+<position info="not_deleted" x="581" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="29" y="10"/>
+</item>
+<item historyLabel="platform.h" index="9">
+<position info="not_deleted" x="3" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="83" y="11"/>
+</item>
+<item historyLabel="xiomodule.h" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="stdio.h" index="7">
+<position info="not_deleted" x="5000" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="83" y="11"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="1977" y="0"/>
+</item>
+<item historyLabel="xiomodule.h" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="stdio.h" index="7">
+<position info="not_deleted" x="5999" y="7"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="1977" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="1841" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="1840" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="1890" y="6"/>
+</item>
+<item historyLabel="inbyte.c" index="10">
+<position info="not_deleted" x="180" y="18"/>
+</item>
+<item historyLabel="xiomodule_l.c" index="11">
+<position info="not_deleted" x="13726" y="18"/>
+</item>
+<item historyLabel="inbyte.c" index="10">
+<position info="not_deleted" x="180" y="18"/>
+</item>
+<item historyLabel="xiomodule_l.c" index="11">
+<position info="not_deleted" x="13726" y="18"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position/>
+</item>
+<item historyLabel="stdio.h" index="7">
+<position info="not_deleted" x="27374" y="4"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="396" y="0"/>
+</item>
+<item historyLabel="inbyte.c" index="10">
+<position info="not_deleted" x="150" y="17"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="1974" y="0"/>
+</item>
+<item historyLabel="stdio.h" index="7">
+<position info="not_deleted" x="27364" y="7"/>
+</item>
+<item historyLabel="stdio.h" index="7">
+<position info="not_deleted" x="27376" y="0"/>
+</item>
+<item historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="1833" y="6"/>
+</item>
+<item historyLabel="inbyte.c" index="10">
+<position info="not_deleted" x="198" y="0"/>
+</item>
+<item active="true" historyLabel="helloworld.c" index="2">
+<position info="not_deleted" x="1833" y="6"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xiomodule_l.c" tooltip="read_lines_bsp/microblaze_mcs/libsrc/iomodule_v1_04_a/src/xiomodule_l.c">
+<persistable path="/read_lines_bsp/microblaze_mcs/libsrc/iomodule_v1_04_a/src/xiomodule_l.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="inbyte.c" tooltip="read_lines_bsp/microblaze_mcs/libsrc/standalone_v3_11_a/src/inbyte.c">
+<persistable path="/read_lines_bsp/microblaze_mcs/libsrc/standalone_v3_11_a/src/inbyte.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="platform.h" tooltip="read_lines/src/platform.h">
+<persistable path="/read_lines/src/platform.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" tooltip="read_lines_bsp/microblaze_mcs/include/xparameters.h">
+<persistable path="/read_lines_bsp/microblaze_mcs/include/xparameters.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xiomodule.h" tooltip="read_lines_bsp/microblaze_mcs/include/xiomodule.h">
+<persistable path="/read_lines_bsp/microblaze_mcs/include/xiomodule.h"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stdio.h" tooltip="C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h">
+<persistable path="C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h" project="read_lines"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="system_bd.bmm" tooltip="hw_platform_0/system_bd.bmm">
+<persistable path="/hw_platform_0/system_bd.bmm"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="helloworld.c" tooltip="read_lines/src/helloworld.c">
+<persistable path="/read_lines/src/helloworld.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" tooltip="read_lines_bsp/system.mss">
+<persistable path="/read_lines_bsp/system.mss"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" name="system.xml" tooltip="hw_platform_0/system.xml">
+<persistable path="/hw_platform_0/system.xml"/>
+</file>
+</mruList>
+</workbench>

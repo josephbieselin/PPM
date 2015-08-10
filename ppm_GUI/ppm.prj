@@ -1,0 +1,5 @@
+vhdl work "ipcore_dir/mcs_machine_player.vhd"
+vhdl work "ipcore_dir/mcs_io.vhd"
+vhdl work "X74_157.vhf"
+vhdl work "X74_153.vhf"
+vhdl work "ppm.vhf"

@@ -1,0 +1,229 @@
+V3 133
+FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf 2015/06/12.12:02:25 P.20131013
+EN work/M2_1E_MXILINX_ppm 1434125117 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1E_MXILINX_ppm/BEHAVIORAL 1434125118 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      EN work/M2_1E_MXILINX_ppm 1434125117 CP AND3 CP AND3B1 CP OR2
+EN work/X74_157_MUSER_ppm 1434125119 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/X74_157_MUSER_ppm/BEHAVIORAL 1434125120 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      EN work/X74_157_MUSER_ppm 1434125119 CP M2_1E_MXILINX_ppm CP INV
+EN work/M2_1_MXILINX_ppm 1434125121 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1_MXILINX_ppm/BEHAVIORAL 1434125122 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      EN work/M2_1_MXILINX_ppm 1434125121 CP AND2B1 CP OR2 CP AND2
+EN work/X74_153_MUSER_ppm 1434125123 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/X74_153_MUSER_ppm/BEHAVIORAL 1434125124 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      EN work/X74_153_MUSER_ppm 1434125123 CP M2_1_MXILINX_ppm \
+      CP M2_1E_MXILINX_ppm CP INV
+EN work/FD4CE_MXILINX_ppm 1434125125 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FD4CE_MXILINX_ppm/BEHAVIORAL 1434125126 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      EN work/FD4CE_MXILINX_ppm 1434125125 CP FDCE
+EN work/COMP4_MXILINX_ppm 1434125127 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/COMP4_MXILINX_ppm/BEHAVIORAL 1434125128 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      EN work/COMP4_MXILINX_ppm 1434125127 CP AND4 CP XNOR2
+EN work/COMPM4_MXILINX_ppm 1434125129 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/COMPM4_MXILINX_ppm/BEHAVIORAL 1434125130 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      EN work/COMPM4_MXILINX_ppm 1434125129 CP AND2 CP NOR2 CP AND2B1 CP OR2 CP XNOR2 \
+      CP AND3B1
+EN work/ADD8_MXILINX_ppm 1434125131 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/ADD8_MXILINX_ppm/BEHAVIORAL 1434125132 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      EN work/ADD8_MXILINX_ppm 1434125131 CP FMAP CP MUXCY_L CP MUXCY CP XORCY \
+      CP MUXCY_D CP XOR2
+EN work/ADD4_MXILINX_ppm 1434125133 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/ADD4_MXILINX_ppm/BEHAVIORAL 1434125134 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      EN work/ADD4_MXILINX_ppm 1434125133 CP MUXCY_L CP MUXCY CP MUXCY_D CP XORCY \
+      CP FMAP CP XOR2
+EN work/M4_1E_MXILINX_ppm 1434125135 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M4_1E_MXILINX_ppm/BEHAVIORAL 1434125136 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      EN work/M4_1E_MXILINX_ppm 1434125135 CP M2_1E_MXILINX_ppm CP MUXF5
+EN work/FTCE_MXILINX_ppm 1434125137 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FTCE_MXILINX_ppm/BEHAVIORAL 1434125138 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      EN work/FTCE_MXILINX_ppm 1434125137 CP XOR2 CP FDCE
+EN work/CB16CE_MXILINX_ppm 1434125139 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CB16CE_MXILINX_ppm/BEHAVIORAL 1434125140 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      EN work/CB16CE_MXILINX_ppm 1434125139 CP FTCE_MXILINX_ppm CP AND3 CP AND2 \
+      CP VCC CP AND4 CP AND5
+EN work/CB2CE_MXILINX_ppm 1434125141 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CB2CE_MXILINX_ppm/BEHAVIORAL 1434125142 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      EN work/CB2CE_MXILINX_ppm 1434125141 CP FTCE_MXILINX_ppm CP AND2 CP VCC
+EN work/COMPM8_MXILINX_ppm 1434125143 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/COMPM8_MXILINX_ppm/BEHAVIORAL 1434125144 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      EN work/COMPM8_MXILINX_ppm 1434125143 CP AND2B1 CP OR4 CP NOR2 CP AND3 CP OR2 \
+      CP AND3B1 CP XNOR2 CP AND2 CP AND4
+EN work/D3_8E_MXILINX_ppm 1434125145 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/D3_8E_MXILINX_ppm/BEHAVIORAL 1434125146 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      EN work/D3_8E_MXILINX_ppm 1434125145 CP AND4 CP AND4B1 CP AND4B2 CP AND4B3
+EN work/CB4CE_MXILINX_ppm 1434125147 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CB4CE_MXILINX_ppm/BEHAVIORAL 1434125148 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      EN work/CB4CE_MXILINX_ppm 1434125147 CP FTCE_MXILINX_ppm CP AND4 CP AND3 \
+      CP AND2 CP VCC
+EN work/COMPM2_MXILINX_ppm 1434125149 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/COMPM2_MXILINX_ppm/BEHAVIORAL 1434125150 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      EN work/COMPM2_MXILINX_ppm 1434125149 CP AND3B1 CP XNOR2 CP AND2B1 CP OR2
+EN work/FD8CE_MXILINX_ppm 1434125151 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FD8CE_MXILINX_ppm/BEHAVIORAL 1434125152 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      EN work/FD8CE_MXILINX_ppm 1434125151 CP FDCE
+EN work/CD4CE_MXILINX_ppm 1434125153 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CD4CE_MXILINX_ppm/BEHAVIORAL 1434125154 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      EN work/CD4CE_MXILINX_ppm 1434125153 CP FDCE CP AND3 CP XOR2 CP OR2 CP AND2 \
+      CP AND2B1 CP INV CP AND4B2
+EN work/D2_4E_MXILINX_ppm 1434125155 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/D2_4E_MXILINX_ppm/BEHAVIORAL 1434125156 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      EN work/D2_4E_MXILINX_ppm 1434125155 CP AND3 CP AND3B1 CP AND3B2
+EN work/FTCLEX_MXILINX_ppm 1434125157 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FTCLEX_MXILINX_ppm/BEHAVIORAL 1434125158 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      EN work/FTCLEX_MXILINX_ppm 1434125157 CP M2_1_MXILINX_ppm CP XOR2 CP FDCE
+EN work/CB4CLE_MXILINX_ppm 1434125159 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CB4CLE_MXILINX_ppm/BEHAVIORAL 1434125160 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      EN work/CB4CLE_MXILINX_ppm 1434125159 CP FTCLEX_MXILINX_ppm CP VCC CP AND4 \
+      CP AND2 CP AND3 CP OR2
+EN work/M8_1E_MXILINX_ppm 1434125161 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M8_1E_MXILINX_ppm/BEHAVIORAL 1434125162 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      EN work/M8_1E_MXILINX_ppm 1434125161 CP M2_1E_MXILINX_ppm CP MUXF5_L CP MUXF6
+EN work/ppm 1434125163 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/ppm/BEHAVIORAL 1434125164 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/ppm.vhf \
+      EN work/ppm 1434125163 CP OBUF CP BUF CP IBUF CP BUFG CP OR2 CP AND2B1 CP AND2 \
+      CP AND3B1 CP CB2CE_MXILINX_ppm CP FDC CP OR3 CP AND3B2 CP FDCE CP OR4 CP NOR2 \
+      CP AND3 CP CB4CLE_MXILINX_ppm CP D3_8E_MXILINX_ppm CP CB16CE_MXILINX_ppm \
+      CP FD4CE_MXILINX_ppm CP X74_157_MUSER_ppm CP X74_153_MUSER_ppm CP OR2B1 \
+      CP D2_4E_MXILINX_ppm CP NAND2 CP M4_1E_MXILINX_ppm CP ROM16X1 CP INV \
+      CP M8_1E_MXILINX_ppm CP FD8CE_MXILINX_ppm CP CD4CE_MXILINX_ppm CP NOR3 \
+      CP COMP4_MXILINX_ppm CP ADD4_MXILINX_ppm CP M2_1E_MXILINX_ppm \
+      CP ADD8_MXILINX_ppm CP COMPM8_MXILINX_ppm CP COMPM2_MXILINX_ppm CP NOR5 \
+      CP AND4B2 CP COMPM4_MXILINX_ppm CP NOR4 CP AND2B2 CP OR5 CP AND4B1 CP AND3B3 \
+      CP M2_1_MXILINX_ppm CP CB4CE_MXILINX_ppm CP VCC CP GND
+FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/X74_153.vhf 2015/06/07.17:06:19 P.20131013
+EN work/M2_1E_MXILINX_X74_153 1434125165 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/X74_153.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1E_MXILINX_X74_153/BEHAVIORAL 1434125166 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/X74_153.vhf \
+      EN work/M2_1E_MXILINX_X74_153 1434125165 CP AND3 CP AND3B1 CP OR2
+EN work/M2_1_MXILINX_X74_153 1434125167 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/X74_153.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1_MXILINX_X74_153/BEHAVIORAL 1434125168 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/X74_153.vhf \
+      EN work/M2_1_MXILINX_X74_153 1434125167 CP AND2B1 CP OR2 CP AND2
+EN work/X74_153 1434125169 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/X74_153.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/X74_153/BEHAVIORAL 1434125170 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/X74_153.vhf \
+      EN work/X74_153 1434125169 CP M2_1_MXILINX_X74_153 CP M2_1E_MXILINX_X74_153 \
+      CP INV
+FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/X74_157.vhf 2015/06/07.17:06:18 P.20131013
+EN work/M2_1E_MXILINX_X74_157 1434125171 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/X74_157.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1E_MXILINX_X74_157/BEHAVIORAL 1434125172 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/X74_157.vhf \
+      EN work/M2_1E_MXILINX_X74_157 1434125171 CP AND3 CP AND3B1 CP OR2
+EN work/X74_157 1434125173 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/X74_157.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/X74_157/BEHAVIORAL 1434125174 \
+      FL //csepdcg6.cselabs.local/hh753/newcs2204/pfhvsmnexys2/X74_157.vhf \
+      EN work/X74_157 1434125173 CP M2_1E_MXILINX_X74_157 CP INV
+FL D:/work/academic/cs2204/fall2015/labs/pfhvsm/ppm.vhf 2015/06/07.17:06:33 P.20131013
+FL D:/work/academic/cs2204/fall2015/labs/pfhvsm/X74_153.vhf 2015/06/07.17:06:19 P.20131013
+FL D:/work/academic/cs2204/fall2015/labs/pfhvsm/X74_157.vhf 2015/06/07.17:06:18 P.20131013

@@ -1,0 +1,2785 @@
+11:54:27 **** Build of project mp_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe mcs_machine_player \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe mcs_machine_player -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mxl-soft-mul -mno-xl-reorder -mcpu=v8.40.a  -O2
+-c" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mxl-soft-mul -mno-xl-reorder -mcpu=v8.40.a  -O2
+-c" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling bram"
+"Compiling iomodule"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+11:54:45 **** Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2270	    268	   2084	   4622	   120e	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+11:55:22 **** Build of project io_bsp ****
+make -k all 
+libgen -hw ../hw_platform_1/system.xml\
+	       \
+	       -pe mcs_io \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_1/system.xml -pe mcs_io -log libgen.log
+system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mxl-soft-mul -mno-xl-reorder -mcpu=v8.40.a  -O2
+-c" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mxl-soft-mul -mno-xl-reorder -mcpu=v8.40.a  -O2
+-c" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling bram"
+"Compiling iomodule"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+11:55:35 **** Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io.elf  |tee "io.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2270	    268	   2084	   4622	   120e	io.elf
+'Finished building: io.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck io.elf -hw ../../hw_platform_1/system.xml -pe mcs_io  |tee "io.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_1/system.xml -pe mcs_io io.elf 
+
+ELF file	: io.elf
+elfcheck passed.
+'Finished building: io.elf.elfcheck'
+' '
+11:58:09 **** Clean-only build of configuration Debug for project io ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  io.elf.size  io.elf.elfcheck  io.elf
+' '
+11:58:10 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io.elf  |tee "io.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2270	    268	   2084	   4622	   120e	io.elf
+'Finished building: io.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck io.elf -hw ../../hw_platform_1/system.xml -pe mcs_io  |tee "io.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_1/system.xml -pe mcs_io io.elf 
+
+ELF file	: io.elf
+elfcheck passed.
+'Finished building: io.elf.elfcheck'
+' '
+11:58:18 **** Clean-only build of configuration Debug for project mp ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  mp.elf.size  mp.elf.elfcheck  mp.elf
+' '
+11:58:19 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2270	    268	   2084	   4622	   120e	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+12:05:45 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6702	    344	   2288	   9334	   2476	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+12:07:30 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6702	    344	   2288	   9334	   2476	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+12:16:42 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6702	    344	   2288	   9334	   2476	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+12:42:36 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6702	    344	   2288	   9334	   2476	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+12:46:38 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6702	    344	   2312	   9358	   248e	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+12:47:41 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6718	    344	   2312	   9374	   249e	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+12:58:31 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8186	    344	   2318	  10848	   2a60	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+13:09:38 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8186	    344	   2318	  10848	   2a60	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+13:43:42 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+../src/helloworld_mp.c: In function 'update_mcs_io':
+../src/helloworld_mp.c:125:5: error: a label can only be part of a statement and a declaration is not a statement
+../src/helloworld_mp.c:139:15: error: expected expression before ')' token
+make: *** [src/helloworld_mp.o] Error 1
+14:02:55 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+../src/helloworld_mp.c: In function 'update_mcs_io':
+../src/helloworld_mp.c:125:5: error: a label can only be part of a statement and a declaration is not a statement
+../src/helloworld_mp.c:138:5: error: a label can only be part of a statement and a declaration is not a statement
+../src/helloworld_mp.c:138:9: error: redefinition of 'data24'
+../src/helloworld_mp.c:125:9: note: previous definition of 'data24' was here
+../src/helloworld_mp.c:142:28: error: expected ';' before ')' token
+../src/helloworld_mp.c:142:28: error: expected statement before ')' token
+../src/helloworld_mp.c:142:30: error: expected expression before '<<' token
+../src/helloworld_mp.c:144:9: error: label at end of compound statement
+make: *** [src/helloworld_mp.o] Error 1
+14:02:59 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+../src/helloworld_mp.c: In function 'update_mcs_io':
+../src/helloworld_mp.c:125:5: error: a label can only be part of a statement and a declaration is not a statement
+../src/helloworld_mp.c:138:5: error: a label can only be part of a statement and a declaration is not a statement
+../src/helloworld_mp.c:138:9: error: redefinition of 'data24'
+../src/helloworld_mp.c:125:9: note: previous definition of 'data24' was here
+../src/helloworld_mp.c:142:28: error: expected ';' before ')' token
+../src/helloworld_mp.c:142:28: error: expected statement before ')' token
+../src/helloworld_mp.c:142:30: error: expected expression before '<<' token
+../src/helloworld_mp.c:144:9: error: label at end of compound statement
+make: *** [src/helloworld_mp.o] Error 1
+14:05:24 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+../src/helloworld_mp.c: In function 'update_mcs_io':
+../src/helloworld_mp.c:125:5: error: a label can only be part of a statement and a declaration is not a statement
+../src/helloworld_mp.c:138:5: error: a label can only be part of a statement and a declaration is not a statement
+../src/helloworld_mp.c:138:9: error: redefinition of 'data24'
+../src/helloworld_mp.c:125:9: note: previous definition of 'data24' was here
+../src/helloworld_mp.c:145:5: error: a label can only be part of a statement and a declaration is not a statement
+../src/helloworld_mp.c:145:9: error: redefinition of 'data24'
+../src/helloworld_mp.c:138:9: note: previous definition of 'data24' was here
+make: *** [src/helloworld_mp.o] Error 1
+14:06:04 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8186	    344	   2318	  10848	   2a60	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+14:06:29 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8186	    344	   2318	  10848	   2a60	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+14:06:49 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8186	    344	   2318	  10848	   2a60	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+14:08:05 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+../src/helloworld_mp.c: In function 'update_mcs_io':
+../src/helloworld_mp.c:150:21: error: 'P2ADD' undeclared (first use in this function)
+../src/helloworld_mp.c:150:21: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld_mp.c:151:21: error: 'P2PLAYED' undeclared (first use in this function)
+../src/helloworld_mp.c:152:21: error: 'P2SEL' undeclared (first use in this function)
+../src/helloworld_mp.c:153:21: error: 'P2SKIP' undeclared (first use in this function)
+make: *** [src/helloworld_mp.o] Error 1
+14:08:37 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8186	    344	   2318	  10848	   2a60	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+14:09:25 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8186	    344	   2318	  10848	   2a60	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+14:09:39 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8186	    344	   2318	  10848	   2a60	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+14:20:42 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8186	    344	   2318	  10848	   2a60	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+14:21:34 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8186	    344	   2318	  10848	   2a60	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+14:22:18 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10594	    344	   2326	  13264	   33d0	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+14:23:21 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld_io.o: In function `rx_interrupt':
+C:\Users\Steven\Desktop\pfhvsmnexys48displays_v5_2mcs_p1_mvsm\io\Debug/../src/helloworld_io.c:111: undefined reference to `send_to_mp'
+C:\Users\Steven\Desktop\pfhvsmnexys48displays_v5_2mcs_p1_mvsm\io\Debug/../src/helloworld_io.c:112: undefined reference to `send_to_mp'
+collect2: ld returned 1 exit status
+make: *** [io.elf] Error 1
+14:25:26 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld_io.o: In function `init_uart_interrupt':
+C:\Users\Steven\Desktop\pfhvsmnexys48displays_v5_2mcs_p1_mvsm\io\Debug/../src/helloworld_io.c:140: undefined reference to `rx_interrupt'
+collect2: ld returned 1 exit status
+make: *** [io.elf] Error 1
+14:25:39 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld_io.o: In function `rx_interrupt':
+C:\Users\Steven\Desktop\pfhvsmnexys48displays_v5_2mcs_p1_mvsm\io\Debug/../src/helloworld_io.c:93: undefined reference to `send_to_mp'
+C:\Users\Steven\Desktop\pfhvsmnexys48displays_v5_2mcs_p1_mvsm\io\Debug/../src/helloworld_io.c:94: undefined reference to `send_to_mp'
+C:\Users\Steven\Desktop\pfhvsmnexys48displays_v5_2mcs_p1_mvsm\io\Debug/../src/helloworld_io.c:95: undefined reference to `print_buffer'
+C:\Users\Steven\Desktop\pfhvsmnexys48displays_v5_2mcs_p1_mvsm\io\Debug/../src/helloworld_io.c:96: undefined reference to `print_nothing'
+collect2: ld returned 1 exit status
+make: *** [io.elf] Error 1
+14:25:51 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+../src/helloworld_io.c: In function 'rx_interrupt':
+../src/helloworld_io.c:93:3: warning: implicit declaration of function 'send_to_mp' [-Wimplicit-function-declaration]
+../src/helloworld_io.c:95:3: warning: implicit declaration of function 'print_buffer' [-Wimplicit-function-declaration]
+../src/helloworld_io.c:96:3: warning: implicit declaration of function 'print_nothing' [-Wimplicit-function-declaration]
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld_io.o: In function `rx_interrupt':
+C:\Users\Steven\Desktop\pfhvsmnexys48displays_v5_2mcs_p1_mvsm\io\Debug/../src/helloworld_io.c:93: undefined reference to `send_to_mp'
+C:\Users\Steven\Desktop\pfhvsmnexys48displays_v5_2mcs_p1_mvsm\io\Debug/../src/helloworld_io.c:94: undefined reference to `send_to_mp'
+C:\Users\Steven\Desktop\pfhvsmnexys48displays_v5_2mcs_p1_mvsm\io\Debug/../src/helloworld_io.c:95: undefined reference to `print_buffer'
+C:\Users\Steven\Desktop\pfhvsmnexys48displays_v5_2mcs_p1_mvsm\io\Debug/../src/helloworld_io.c:96: undefined reference to `print_nothing'
+collect2: ld returned 1 exit status
+make: *** [io.elf] Error 1
+14:26:11 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld_io.o: In function `init_uart_interrupt':
+C:\Users\Steven\Desktop\pfhvsmnexys48displays_v5_2mcs_p1_mvsm\io\Debug/../src/helloworld_io.c:133: undefined reference to `rx_interrupt'
+collect2: ld returned 1 exit status
+make: *** [io.elf] Error 1
+14:26:19 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io.elf  |tee "io.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5614	    368	   2576	   8558	   216e	io.elf
+'Finished building: io.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck io.elf -hw ../../hw_platform_1/system.xml -pe mcs_io  |tee "io.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_1/system.xml -pe mcs_io io.elf 
+
+ELF file	: io.elf
+elfcheck passed.
+'Finished building: io.elf.elfcheck'
+' '
+14:29:05 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io.elf  |tee "io.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5666	    368	   2582	   8616	   21a8	io.elf
+'Finished building: io.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck io.elf -hw ../../hw_platform_1/system.xml -pe mcs_io  |tee "io.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_1/system.xml -pe mcs_io io.elf 
+
+ELF file	: io.elf
+elfcheck passed.
+'Finished building: io.elf.elfcheck'
+' '
+14:42:02 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+../src/helloworld_io.c: In function 'decode_and_print':
+../src/helloworld_io.c:133:1: error: 'data24' undeclared (first use in this function)
+../src/helloworld_io.c:133:1: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld_io.c:143:34: error: break statement not within loop or switch
+../src/helloworld_io.c:144:1: error: case label not within a switch statement
+../src/helloworld_io.c:149:33: error: break statement not within loop or switch
+../src/helloworld_io.c:150:1: error: case label not within a switch statement
+make: *** [src/helloworld_io.o] Error 1
+14:47:26 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+../src/helloworld_io.c: In function 'decode_and_print':
+../src/helloworld_io.c:144:1: error: 'data24' undeclared (first use in this function)
+../src/helloworld_io.c:144:1: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld_io.c:154:34: error: break statement not within loop or switch
+../src/helloworld_io.c:155:1: error: case label not within a switch statement
+../src/helloworld_io.c:160:33: error: break statement not within loop or switch
+../src/helloworld_io.c:161:1: error: case label not within a switch statement
+make: *** [src/helloworld_io.o] Error 1
+14:47:37 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+../src/helloworld_io.c: In function 'decode_and_print':
+../src/helloworld_io.c:114:5: warning: variable 'RWD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:112:5: warning: variable 'NSD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:111:5: warning: variable 'P2SKIP_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:110:5: warning: variable 'P2SEL_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:109:5: warning: variable 'P2PLAYED_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:108:5: warning: variable 'P2ADD_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:107:5: warning: variable 'P1SKIP_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:106:5: warning: variable 'P1SEL_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:105:5: warning: variable 'P1PLAYED_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:104:5: warning: variable 'P1ADD_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:103:5: warning: variable 'P2PT' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:102:5: warning: variable 'P1PT' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:100:5: warning: variable 'P2CLK' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:99:5: warning: variable 'SYSCLK' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:98:5: warning: variable 'STATE' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:97:5: warning: variable 'RD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:96:5: warning: variable 'DISP' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io.elf  |tee "io.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7490	    368	   2582	  10440	   28c8	io.elf
+'Finished building: io.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck io.elf -hw ../../hw_platform_1/system.xml -pe mcs_io  |tee "io.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_1/system.xml -pe mcs_io io.elf 
+
+ELF file	: io.elf
+elfcheck passed.
+'Finished building: io.elf.elfcheck'
+' '
+14:55:24 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+../src/helloworld_io.c: In function 'decode_and_print':
+../src/helloworld_io.c:149:29: error: 'SYS_CLK' undeclared (first use in this function)
+../src/helloworld_io.c:149:29: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld_io.c:99:5: warning: variable 'SYSCLK' set but not used [-Wunused-but-set-variable]
+make: *** [src/helloworld_io.o] Error 1
+14:55:31 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io.elf  |tee "io.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11358	    372	   2580	  14310	   37e6	io.elf
+'Finished building: io.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck io.elf -hw ../../hw_platform_1/system.xml -pe mcs_io  |tee "io.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_1/system.xml -pe mcs_io io.elf 
+
+ELF file	: io.elf
+elfcheck passed.
+'Finished building: io.elf.elfcheck'
+' '
+14:56:02 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io.elf  |tee "io.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11362	    372	   2586	  14320	   37f0	io.elf
+'Finished building: io.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck io.elf -hw ../../hw_platform_1/system.xml -pe mcs_io  |tee "io.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_1/system.xml -pe mcs_io io.elf 
+
+ELF file	: io.elf
+elfcheck passed.
+'Finished building: io.elf.elfcheck'
+' '
+12:00:01 **** Clean-only build of configuration Debug for project mp ****
+make clean 
+rm -rf  ./src/helloworld_mp.o ./src/platform.o  ./src/helloworld_mp.d ./src/platform.d  mp.elf.size  mp.elf.elfcheck  mp.elf
+' '
+12:00:03 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+../src/helloworld_mp.c: In function 'machine_player_think':
+../src/helloworld_mp.c:274:5: warning: variable 'largest_n_adj_pos' set but not used [-Wunused-but-set-variable]
+../src/helloworld_mp.c:272:5: warning: variable 'largest_n_adj_add' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10434	    344	   2326	  13104	   3330	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+14:06:04 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10658	    344	   2326	  13328	   3410	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+14:08:30 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10602	    344	   2326	  13272	   33d8	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+11:43:05 **** Clean-only build of configuration Debug for project io ****
+make clean 
+rm -rf  ./src/helloworld_io.o ./src/platform.o  ./src/helloworld_io.d ./src/platform.d  io.elf.size  io.elf.elfcheck  io.elf
+' '
+11:43:08 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io.elf  |tee "io.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11362	    372	   2586	  14320	   37f0	io.elf
+'Finished building: io.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck io.elf -hw ../../hw_platform_1/system.xml -pe mcs_io  |tee "io.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_1/system.xml -pe mcs_io io.elf 
+
+ELF file	: io.elf
+elfcheck passed.
+'Finished building: io.elf.elfcheck'
+' '
+11:43:20 **** Auto Build of configuration Debug for project mp ****
+make all 
+make: Nothing to be done for `all'.
+12:03:38 **** Clean-only build of configuration Debug for project io ****
+make clean 
+rm -rf  ./src/helloworld_io.o ./src/platform.o  ./src/helloworld_io.d ./src/platform.d  io.elf.size  io.elf.elfcheck  io.elf
+' '
+12:03:39 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io.elf  |tee "io.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4802	    368	   2582	   7752	   1e48	io.elf
+'Finished building: io.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck io.elf -hw ../../hw_platform_1/system.xml -pe mcs_io  |tee "io.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_1/system.xml -pe mcs_io io.elf 
+
+ELF file	: io.elf
+elfcheck passed.
+'Finished building: io.elf.elfcheck'
+' '
+12:03:49 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+../src/helloworld_mp.c: In function 'read_from_io':
+../src/helloworld_mp.c:108:3: error: 'buffer' undeclared (first use in this function)
+../src/helloworld_mp.c:108:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld_mp.c:107:6: warning: variable 'index' set but not used [-Wunused-but-set-variable]
+make: *** [src/helloworld_mp.o] Error 1
+12:04:14 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9382	    344	   2448	  12174	   2f8e	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+12:06:10 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9390	    344	   2448	  12182	   2f96	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+12:07:47 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9402	    344	   2454	  12200	   2fa8	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+12:10:48 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9462	    344	   2448	  12254	   2fde	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+12:11:19 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io.elf  |tee "io.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5658	    368	   2582	   8608	   21a0	io.elf
+'Finished building: io.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck io.elf -hw ../../hw_platform_1/system.xml -pe mcs_io  |tee "io.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_1/system.xml -pe mcs_io io.elf 
+
+ELF file	: io.elf
+elfcheck passed.
+'Finished building: io.elf.elfcheck'
+' '
+12:18:53 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7446	    344	   2440	  10230	   27f6	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+12:21:43 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+../src/helloworld_io.c: In function 'rx_interrupt':
+../src/helloworld_io.c:73:2: error: unknown type name 'uint8_t'
+../src/helloworld_io.c:73:10: warning: unused variable 'data' [-Wunused-variable]
+make: *** [src/helloworld_io.o] Error 1
+12:21:49 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+../src/helloworld_io.c: In function 'rx_interrupt':
+../src/helloworld_io.c:73:5: warning: unused variable 'data' [-Wunused-variable]
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io.elf  |tee "io.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5754	    368	   2582	   8704	   2200	io.elf
+'Finished building: io.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck io.elf -hw ../../hw_platform_1/system.xml -pe mcs_io  |tee "io.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_1/system.xml -pe mcs_io io.elf 
+
+ELF file	: io.elf
+elfcheck passed.
+'Finished building: io.elf.elfcheck'
+' '
+12:23:45 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io.elf  |tee "io.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6018	    368	   2582	   8968	   2308	io.elf
+'Finished building: io.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck io.elf -hw ../../hw_platform_1/system.xml -pe mcs_io  |tee "io.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_1/system.xml -pe mcs_io io.elf 
+
+ELF file	: io.elf
+elfcheck passed.
+'Finished building: io.elf.elfcheck'
+' '
+12:31:32 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+../src/helloworld_io.c: In function 'decode_and_print':
+../src/helloworld_io.c:97:5: warning: variable 'RWD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:83:5: warning: variable 'P2CLK' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:82:5: warning: variable 'SYSCLK' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io.elf  |tee "io.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6018	    368	   2582	   8968	   2308	io.elf
+'Finished building: io.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck io.elf -hw ../../hw_platform_1/system.xml -pe mcs_io  |tee "io.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_1/system.xml -pe mcs_io io.elf 
+
+ELF file	: io.elf
+elfcheck passed.
+'Finished building: io.elf.elfcheck'
+' '
+12:33:28 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9854	    344	   2448	  12646	   3166	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+12:36:27 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+../src/helloworld_io.c: In function 'main':
+../src/helloworld_io.c:64:3: warning: implicit declaration of function 'decode_and_print' [-Wimplicit-function-declaration]
+../src/helloworld_io.c: At top level:
+../src/helloworld_io.c:78:6: warning: conflicting types for 'decode_and_print' [enabled by default]
+../src/helloworld_io.c:64:3: note: previous implicit declaration of 'decode_and_print' was here
+../src/helloworld_io.c: In function 'decode_and_print':
+../src/helloworld_io.c:97:5: warning: variable 'RWD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:95:5: warning: variable 'NSD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:94:5: warning: variable 'P2SKIP_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:92:5: warning: variable 'P2PLAYED_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:90:5: warning: variable 'P1SKIP_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:88:5: warning: variable 'P1PLAYED_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:83:5: warning: variable 'P2CLK' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:82:5: warning: variable 'SYSCLK' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io.elf  |tee "io.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11674	    372	   2586	  14632	   3928	io.elf
+'Finished building: io.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck io.elf -hw ../../hw_platform_1/system.xml -pe mcs_io  |tee "io.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_1/system.xml -pe mcs_io io.elf 
+
+ELF file	: io.elf
+elfcheck passed.
+'Finished building: io.elf.elfcheck'
+' '
+12:36:54 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+../src/helloworld_io.c: In function 'decode_and_print':
+../src/helloworld_io.c:58:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+../src/helloworld_io.c:73:28: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+../src/helloworld_io.c:79:28: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+../src/helloworld_io.c:142:24: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+../src/helloworld_io.c:161:36: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+../src/helloworld_io.c:173:21: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+../src/helloworld_io.c:178:31: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+../src/helloworld_io.c:54:5: error: declaration for parameter 'buffer' but no such parameter
+../src/helloworld_io.c:53:5: error: declaration for parameter 'IO_DATA' but no such parameter
+../src/helloworld_io.c:52:5: error: declaration for parameter 'MP_DATA' but no such parameter
+../src/helloworld_io.c:50:11: error: declaration for parameter 'gpo_int' but no such parameter
+../src/helloworld_io.c:49:11: error: declaration for parameter 'gpio' but no such parameter
+../src/helloworld_io.c:47:6: error: declaration for parameter 'send_to_mp' but no such parameter
+../src/helloworld_io.c:46:6: error: declaration for parameter 'read_from_mp' but no such parameter
+../src/helloworld_io.c:192:1: error: expected '{' at end of input
+make: *** [src/helloworld_io.o] Error 1
+12:36:56 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+../src/helloworld_io.c: In function 'decode_and_print':
+../src/helloworld_io.c:98:5: warning: variable 'RWD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:96:5: warning: variable 'NSD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:95:5: warning: variable 'P2SKIP_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:93:5: warning: variable 'P2PLAYED_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:91:5: warning: variable 'P1SKIP_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:89:5: warning: variable 'P1PLAYED_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:84:5: warning: variable 'P2CLK' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:83:5: warning: variable 'SYSCLK' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io.elf  |tee "io.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11670	    372	   2580	  14622	   391e	io.elf
+'Finished building: io.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck io.elf -hw ../../hw_platform_1/system.xml -pe mcs_io  |tee "io.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_1/system.xml -pe mcs_io io.elf 
+
+ELF file	: io.elf
+elfcheck passed.
+'Finished building: io.elf.elfcheck'
+' '
+12:37:09 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+../src/helloworld_io.c: In function 'decode_and_print':
+../src/helloworld_io.c:98:5: warning: variable 'RWD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:96:5: warning: variable 'NSD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:95:5: warning: variable 'P2SKIP_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:93:5: warning: variable 'P2PLAYED_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:91:5: warning: variable 'P1SKIP_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:89:5: warning: variable 'P1PLAYED_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:84:5: warning: variable 'P2CLK' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:83:5: warning: variable 'SYSCLK' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io.elf  |tee "io.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11670	    372	   2580	  14622	   391e	io.elf
+'Finished building: io.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck io.elf -hw ../../hw_platform_1/system.xml -pe mcs_io  |tee "io.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_1/system.xml -pe mcs_io io.elf 
+
+ELF file	: io.elf
+elfcheck passed.
+'Finished building: io.elf.elfcheck'
+' '
+12:43:36 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9898	    344	   2454	  12696	   3198	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+12:50:11 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+../src/helloworld_mp.c:36:0: warning: "SEND_SKIP" redefined [enabled by default]
+../src/helloworld_mp.c:35:0: note: this is the location of the previous definition
+../src/helloworld_mp.c:37:0: warning: "SEND_SKIP" redefined [enabled by default]
+../src/helloworld_mp.c:36:0: note: this is the location of the previous definition
+../src/helloworld_mp.c:38:0: warning: "SEND_SKIP" redefined [enabled by default]
+../src/helloworld_mp.c:37:0: note: this is the location of the previous definition
+../src/helloworld_mp.c:39:0: warning: "SEND_SKIP" redefined [enabled by default]
+../src/helloworld_mp.c:38:0: note: this is the location of the previous definition
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9898	    344	   2454	  12696	   3198	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+12:51:46 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+../src/helloworld_mp.c: In function 'process_move':
+../src/helloworld_mp.c:127:3: error: case label does not reduce to an integer constant
+make: *** [src/helloworld_mp.o] Error 1
+12:52:24 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9898	    344	   2454	  12696	   3198	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+12:55:28 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+../src/helloworld_mp.c: In function 'process_move':
+../src/helloworld_mp.c:136:8: error: label at end of compound statement
+make: *** [src/helloworld_mp.o] Error 1
+13:04:05 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10352	    344	   2448	  13144	   3358	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+13:05:43 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10352	    344	   2448	  13144	   3358	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+13:07:08 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+../src/helloworld_mp.c:286:1: error: expected identifier or '(' before '}' token
+make: *** [src/helloworld_mp.o] Error 1
+13:07:14 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10372	    344	   2452	  13168	   3370	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+13:10:59 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+../src/helloworld_mp.c: In function 'process_move':
+../src/helloworld_mp.c:297:1: error: expected declaration or statement at end of input
+make: *** [src/helloworld_mp.o] Error 1
+13:11:23 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+../src/helloworld_mp.c: In function 'process_move':
+../src/helloworld_mp.c:297:1: error: expected declaration or statement at end of input
+make: *** [src/helloworld_mp.o] Error 1
+13:11:56 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+../src/helloworld_mp.c: In function 'process_move':
+../src/helloworld_mp.c:298:1: error: expected declaration or statement at end of input
+make: *** [src/helloworld_mp.o] Error 1
+13:12:42 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+../src/helloworld_mp.c: In function 'process_move':
+../src/helloworld_mp.c:298:1: error: expected declaration or statement at end of input
+make: *** [src/helloworld_mp.o] Error 1
+13:13:41 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10820	    344	   2460	  13624	   3538	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+13:16:20 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10836	    344	   2460	  13640	   3548	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+13:26:33 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+../src/helloworld_io.c: In function 'decode_and_print':
+../src/helloworld_io.c:98:5: warning: variable 'RWD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:96:5: warning: variable 'NSD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:95:5: warning: variable 'P2SKIP_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:93:5: warning: variable 'P2PLAYED_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:91:5: warning: variable 'P1SKIP_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:89:5: warning: variable 'P1PLAYED_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:84:5: warning: variable 'P2CLK' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:83:5: warning: variable 'SYSCLK' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io.elf  |tee "io.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11750	    372	   2580	  14702	   396e	io.elf
+'Finished building: io.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck io.elf -hw ../../hw_platform_1/system.xml -pe mcs_io  |tee "io.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_1/system.xml -pe mcs_io io.elf 
+
+ELF file	: io.elf
+elfcheck passed.
+'Finished building: io.elf.elfcheck'
+' '
+13:27:07 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+../src/helloworld_io.c: In function 'decode_and_print':
+../src/helloworld_io.c:98:5: warning: variable 'RWD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:96:5: warning: variable 'NSD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:95:5: warning: variable 'P2SKIP_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:93:5: warning: variable 'P2PLAYED_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:91:5: warning: variable 'P1SKIP_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:89:5: warning: variable 'P1PLAYED_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:84:5: warning: variable 'P2CLK' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:83:5: warning: variable 'SYSCLK' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io.elf  |tee "io.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11750	    372	   2580	  14702	   396e	io.elf
+'Finished building: io.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck io.elf -hw ../../hw_platform_1/system.xml -pe mcs_io  |tee "io.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_1/system.xml -pe mcs_io io.elf 
+
+ELF file	: io.elf
+elfcheck passed.
+'Finished building: io.elf.elfcheck'
+' '
+13:30:54 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10916	    344	   2460	  13720	   3598	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+13:31:03 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+../src/helloworld_io.c: In function 'decode_and_print':
+../src/helloworld_io.c:98:5: warning: variable 'RWD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:96:5: warning: variable 'NSD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:95:5: warning: variable 'P2SKIP_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:93:5: warning: variable 'P2PLAYED_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:91:5: warning: variable 'P1SKIP_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:89:5: warning: variable 'P1PLAYED_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:84:5: warning: variable 'P2CLK' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:83:5: warning: variable 'SYSCLK' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io.elf  |tee "io.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11750	    372	   2580	  14702	   396e	io.elf
+'Finished building: io.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck io.elf -hw ../../hw_platform_1/system.xml -pe mcs_io  |tee "io.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_1/system.xml -pe mcs_io io.elf 
+
+ELF file	: io.elf
+elfcheck passed.
+'Finished building: io.elf.elfcheck'
+' '
+13:31:43 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10916	    344	   2460	  13720	   3598	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+13:32:48 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10932	    344	   2460	  13736	   35a8	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+13:36:50 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+../src/helloworld_io.c: In function 'decode_and_print':
+../src/helloworld_io.c:100:5: warning: variable 'RWD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:98:5: warning: variable 'NSD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:97:5: warning: variable 'P2SKIP_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:95:5: warning: variable 'P2PLAYED_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:93:5: warning: variable 'P1SKIP_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:91:5: warning: variable 'P1PLAYED_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:86:5: warning: variable 'P2CLK' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:85:5: warning: variable 'SYSCLK' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io.elf  |tee "io.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11790	    372	   2580	  14742	   3996	io.elf
+'Finished building: io.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck io.elf -hw ../../hw_platform_1/system.xml -pe mcs_io  |tee "io.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_1/system.xml -pe mcs_io io.elf 
+
+ELF file	: io.elf
+elfcheck passed.
+'Finished building: io.elf.elfcheck'
+' '
+13:48:19 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10988	    344	   2460	  13792	   35e0	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+17:23:34 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+../src/helloworld_io.c: In function 'decode_and_print':
+../src/helloworld_io.c:100:5: warning: variable 'RWD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:98:5: warning: variable 'NSD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:97:5: warning: variable 'P2SKIP_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:95:5: warning: variable 'P2PLAYED_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:93:5: warning: variable 'P1SKIP_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:91:5: warning: variable 'P1PLAYED_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:86:5: warning: variable 'P2CLK' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:85:5: warning: variable 'SYSCLK' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io.elf  |tee "io.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11882	    372	   2586	  14840	   39f8	io.elf
+'Finished building: io.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck io.elf -hw ../../hw_platform_1/system.xml -pe mcs_io  |tee "io.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_1/system.xml -pe mcs_io io.elf 
+
+ELF file	: io.elf
+elfcheck passed.
+'Finished building: io.elf.elfcheck'
+' '
+18:26:49 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10964	    344	   2460	  13768	   35c8	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+13:05:35 **** Auto Build of project io_bsp ****
+make -k all 
+'Finished building libraries'
+13:05:36 **** Build of configuration Debug for project io ****
+make all 
+make: Nothing to be done for `all'.
+13:05:37 **** Auto Build of project mp_bsp ****
+make -k all 
+'Finished building libraries'
+13:05:37 **** Build of configuration Debug for project mp ****
+make all 
+make: Nothing to be done for `all'.
+13:09:46 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10956	    344	   2460	  13760	   35c0	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+13:10:46 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10956	    344	   2460	  13760	   35c0	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+13:14:31 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10956	    344	   2460	  13760	   35c0	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+13:15:14 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10960	    344	   2456	  13760	   35c0	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+13:20:01 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+../src/helloworld_mp.c:353:1: error: expected identifier or '(' before '}' token
+make: *** [src/helloworld_mp.o] Error 1
+13:20:12 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10768	    344	   2456	  13568	   3500	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+13:31:02 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10760	    344	   2456	  13560	   34f8	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+07:05:15 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+../src/helloworld_io.c: In function 'decode_and_print':
+../src/helloworld_io.c:100:5: warning: variable 'RWD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:98:5: warning: variable 'NSD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:97:5: warning: variable 'P2SKIP_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:96:5: warning: variable 'P2SEL_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:95:5: warning: variable 'P2PLAYED_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:94:5: warning: variable 'P2ADD_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:93:5: warning: variable 'P1SKIP_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:92:5: warning: variable 'P1SEL_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:91:5: warning: variable 'P1PLAYED_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:90:5: warning: variable 'P1ADD_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:86:5: warning: variable 'P2CLK' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:85:5: warning: variable 'SYSCLK' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io.elf  |tee "io.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11770	    372	   2586	  14728	   3988	io.elf
+'Finished building: io.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck io.elf -hw ../../hw_platform_1/system.xml -pe mcs_io  |tee "io.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_1/system.xml -pe mcs_io io.elf 
+
+ELF file	: io.elf
+elfcheck passed.
+'Finished building: io.elf.elfcheck'
+' '
+07:37:42 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+../src/helloworld_mp.c:436:4: error: redefinition of 'P1ADD'
+../src/helloworld_mp.c:97:4: note: previous definition of 'P1ADD' was here
+../src/helloworld_mp.c:437:4: error: redefinition of 'P1PLAYED'
+../src/helloworld_mp.c:98:4: note: previous definition of 'P1PLAYED' was here
+../src/helloworld_mp.c:438:4: error: redefinition of 'P1SEL'
+../src/helloworld_mp.c:99:4: note: previous definition of 'P1SEL' was here
+../src/helloworld_mp.c:439:4: error: redefinition of 'P1SKIP'
+../src/helloworld_mp.c:100:4: note: previous definition of 'P1SKIP' was here
+../src/helloworld_mp.c:441:4: error: redefinition of 'P1GO'
+../src/helloworld_mp.c:102:4: note: previous definition of 'P1GO' was here
+../src/helloworld_mp.c:442:4: error: redefinition of 'P2GO'
+../src/helloworld_mp.c:103:4: note: previous definition of 'P2GO' was here
+../src/helloworld_mp.c:446:5: error: redefinition of 'data24'
+../src/helloworld_mp.c:107:5: note: previous definition of 'data24' was here
+../src/helloworld_mp.c:447:5: error: redefinition of 'MP_DATA'
+../src/helloworld_mp.c:108:5: note: previous definition of 'MP_DATA' was here
+../src/helloworld_mp.c:451:5: error: redefinition of 'count'
+../src/helloworld_mp.c:112:5: note: previous definition of 'count' was here
+../src/helloworld_mp.c:453:5: error: redefinition of 'main'
+../src/helloworld_mp.c:114:5: note: previous definition of 'main' was here
+../src/helloworld_mp.c:482:6: error: redefinition of 'process_move'
+../src/helloworld_mp.c:133:6: note: previous definition of 'process_move' was here
+../src/helloworld_mp.c:519:6: error: redefinition of 'read_from_io'
+../src/helloworld_mp.c:153:6: note: previous definition of 'read_from_io' was here
+../src/helloworld_mp.c:547:6: error: redefinition of 'send_to_io'
+../src/helloworld_mp.c:178:6: note: previous definition of 'send_to_io' was here
+../src/helloworld_mp.c:563:6: error: redefinition of 'update_mcs_io'
+../src/helloworld_mp.c:189:6: note: previous definition of 'update_mcs_io' was here
+../src/helloworld_mp.c:619:6: error: redefinition of 'init_gpio'
+../src/helloworld_mp.c:241:6: note: previous definition of 'init_gpio' was here
+../src/helloworld_mp.c:628:6: error: redefinition of 'INPUT_BLOCK_decode'
+../src/helloworld_mp.c:246:6: note: previous definition of 'INPUT_BLOCK_decode' was here
+../src/helloworld_mp.c:678:6: error: redefinition of 'OUTPUT_BLOCK_write'
+../src/helloworld_mp.c:287:6: note: previous definition of 'OUTPUT_BLOCK_write' was here
+make: *** [src/helloworld_mp.o] Error 1
+07:38:12 **** Auto Build of configuration Debug for project mp ****
+make all 
+'Building file: ../src/helloworld_mp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mp_bsp/mcs_machine_player/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_mp.d" -MT"src/helloworld_mp.d" -o "src/helloworld_mp.o" "../src/helloworld_mp.c"
+'Finished building: ../src/helloworld_mp.c'
+' '
+'Building target: mp.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mp_bsp/mcs_machine_player/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mp.elf"  ./src/helloworld_mp.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mp.elf  |tee "mp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11004	    344	   2460	  13808	   35f0	mp.elf
+'Finished building: mp.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mp.elf -hw ../../hw_platform_0/system.xml -pe mcs_machine_player  |tee "mp.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_0/system.xml -pe mcs_machine_player
+mp.elf 
+
+ELF file	: mp.elf
+elfcheck passed.
+'Finished building: mp.elf.elfcheck'
+' '
+09:06:49 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+../src/helloworld_io.c:38:23: fatal error: xuartlite.h: No such file or directory
+compilation terminated.
+make: *** [src/helloworld_io.o] Error 1
+08:37:26 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+../src/helloworld_io.c: In function 'decode_and_print':
+../src/helloworld_io.c:100:5: warning: variable 'RWD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:98:5: warning: variable 'NSD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:97:5: warning: variable 'P2SKIP_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:96:5: warning: variable 'P2SEL_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:95:5: warning: variable 'P2PLAYED_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:94:5: warning: variable 'P2ADD_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:93:5: warning: variable 'P1SKIP_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:92:5: warning: variable 'P1SEL_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:91:5: warning: variable 'P1PLAYED_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:90:5: warning: variable 'P1ADD_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:86:5: warning: variable 'P2CLK' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:85:5: warning: variable 'SYSCLK' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io.elf  |tee "io.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11770	    372	   2586	  14728	   3988	io.elf
+'Finished building: io.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck io.elf -hw ../../hw_platform_1/system.xml -pe mcs_io  |tee "io.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_1/system.xml -pe mcs_io io.elf 
+
+ELF file	: io.elf
+elfcheck passed.
+'Finished building: io.elf.elfcheck'
+' '

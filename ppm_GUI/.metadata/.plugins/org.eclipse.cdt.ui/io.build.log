@@ -1,0 +1,46 @@
+08:37:26 **** Auto Build of configuration Debug for project io ****
+make all 
+'Building file: ../src/helloworld_io.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../io_bsp/mcs_io/include -mno-xl-reorder -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld_io.d" -MT"src/helloworld_io.d" -o "src/helloworld_io.o" "../src/helloworld_io.c"
+../src/helloworld_io.c: In function 'decode_and_print':
+../src/helloworld_io.c:100:5: warning: variable 'RWD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:98:5: warning: variable 'NSD' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:97:5: warning: variable 'P2SKIP_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:96:5: warning: variable 'P2SEL_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:95:5: warning: variable 'P2PLAYED_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:94:5: warning: variable 'P2ADD_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:93:5: warning: variable 'P1SKIP_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:92:5: warning: variable 'P1SEL_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:91:5: warning: variable 'P1PLAYED_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:90:5: warning: variable 'P1ADD_READ' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:86:5: warning: variable 'P2CLK' set but not used [-Wunused-but-set-variable]
+../src/helloworld_io.c:85:5: warning: variable 'SYSCLK' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/helloworld_io.c'
+' '
+'Building target: io.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../io_bsp/mcs_io/lib -mlittle-endian -mcpu=v8.40.a -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "io.elf"  ./src/helloworld_io.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: io.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size io.elf  |tee "io.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11770	    372	   2586	  14728	   3988	io.elf
+'Finished building: io.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck io.elf -hw ../../hw_platform_1/system.xml -pe mcs_io  |tee "io.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../hw_platform_1/system.xml -pe mcs_io io.elf 
+
+ELF file	: io.elf
+elfcheck passed.
+'Finished building: io.elf.elfcheck'
+' '
+
+08:37:30 Build Finished (took 4s.224ms)
+

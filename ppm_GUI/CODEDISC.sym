@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="CODEDISC">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2011-8-21T20:25:12</timestamp>
+    <pin polarity="Output" x="800" y="-1056" name="P2SELCD1" />
+    <pin polarity="Output" x="800" y="-992" name="P2SELCD2" />
+    <pin polarity="Output" x="800" y="-928" name="P2SELCD3" />
+    <pin polarity="Output" x="800" y="-1120" name="P2SELCD0" />
+    <pin polarity="Output" x="800" y="-768" name="CODEKNOWN" />
+    <pin polarity="Output" x="800" y="-704" name="DIGEQCD" />
+    <pin polarity="Output" x="800" y="-512" name="DIGEQCDPOSSEL0" />
+    <pin polarity="Output" x="800" y="-336" name="P2CODE0" />
+    <pin polarity="Output" x="800" y="-272" name="P2CODE1" />
+    <pin polarity="Output" x="800" y="-208" name="P2CODE2" />
+    <pin polarity="Output" x="800" y="-144" name="P2CODE3" />
+    <pin polarity="Output" x="800" y="-80" name="P2CODE4" />
+    <pin polarity="Output" x="800" y="-16" name="P2CODE5" />
+    <pin polarity="Output" x="800" y="48" name="P2CODE6" />
+    <pin polarity="Output" x="800" y="112" name="P2CODE7" />
+    <pin polarity="Input" x="0" y="-880" name="CODERWD(3:7)" />
+    <pin polarity="Input" x="0" y="-720" name="ENCPOSN0" />
+    <pin polarity="Input" x="0" y="-656" name="ENCPOSN1" />
+    <pin polarity="Input" x="0" y="-1040" name="PSEL1" />
+    <pin polarity="Input" x="0" y="-1120" name="PSEL0" />
+    <pin polarity="Input" x="0" y="-352" name="BRWD2" />
+    <pin polarity="Input" x="0" y="-288" name="BRWD3" />
+    <pin polarity="Input" x="0" y="-480" name="BRWD0" />
+    <pin polarity="Input" x="0" y="-416" name="BRWD1" />
+    <pin polarity="Input" x="0" y="-112" name="TESTP2SEL0" />
+    <pin polarity="Input" x="0" y="-48" name="TESTP2SEL1" />
+    <pin polarity="Input" x="0" y="16" name="TESTADD" />
+    <pin polarity="Input" x="0" y="192" name="STDIGEQCD" />
+    <pin polarity="Input" x="0" y="272" name="CLEARP2FFS" />
+    <pin polarity="Input" x="0" y="352" name="CLEAR" />
+    <pin polarity="Input" x="0" y="432" name="SYSCLK" />
+    <pin polarity="Input" x="0" y="512" name="P2CLK" />
+    <pin polarity="Output" x="800" y="-640" name="BRWDEQCD" />
+    <pin polarity="Output" x="800" y="-576" name="DIGEQCDADD" />
+    <graph>
+        <attrtext style="alignment:RIGHT;fontsize:32;fontname:Arial" attrname="PinName" x="728" y="-1056" type="pin P2SELCD1" />
+        <line x2="800" y1="-1056" y2="-1056" x1="736" />
+        <attrtext style="alignment:RIGHT;fontsize:32;fontname:Arial" attrname="PinName" x="728" y="-992" type="pin P2SELCD2" />
+        <line x2="800" y1="-992" y2="-992" x1="736" />
+        <attrtext style="alignment:RIGHT;fontsize:32;fontname:Arial" attrname="PinName" x="728" y="-928" type="pin P2SELCD3" />
+        <line x2="800" y1="-928" y2="-928" x1="736" />
+        <attrtext style="alignment:RIGHT;fontsize:32;fontname:Arial" attrname="PinName" x="728" y="-1120" type="pin P2SELCD0" />
+        <line x2="800" y1="-1120" y2="-1120" x1="736" />
+        <attrtext style="alignment:RIGHT;fontsize:32;fontname:Arial" attrname="PinName" x="728" y="-768" type="pin CODEKNOWN" />
+        <line x2="800" y1="-768" y2="-768" x1="736" />
+        <attrtext style="alignment:RIGHT;fontsize:32;fontname:Arial" attrname="PinName" x="728" y="-704" type="pin DIGEQCD" />
+        <line x2="800" y1="-704" y2="-704" x1="736" />
+        <attrtext style="alignment:RIGHT;fontsize:32;fontname:Arial" attrname="PinName" x="728" y="-512" type="pin DIGEQCDPOSSEL0" />
+        <line x2="800" y1="-512" y2="-512" x1="736" />
+        <attrtext style="alignment:RIGHT;fontsize:32;fontname:Arial" attrname="PinName" x="728" y="-336" type="pin P2CODE0" />
+        <line x2="800" y1="-336" y2="-336" x1="736" />
+        <attrtext style="alignment:RIGHT;fontsize:32;fontname:Arial" attrname="PinName" x="728" y="-272" type="pin P2CODE1" />
+        <line x2="800" y1="-272" y2="-272" x1="736" />
+        <attrtext style="alignment:RIGHT;fontsize:32;fontname:Arial" attrname="PinName" x="728" y="-208" type="pin P2CODE2" />
+        <line x2="800" y1="-208" y2="-208" x1="736" />
+        <attrtext style="alignment:RIGHT;fontsize:32;fontname:Arial" attrname="PinName" x="728" y="-144" type="pin P2CODE3" />
+        <line x2="800" y1="-144" y2="-144" x1="736" />
+        <attrtext style="alignment:RIGHT;fontsize:32;fontname:Arial" attrname="PinName" x="728" y="-80" type="pin P2CODE4" />
+        <line x2="800" y1="-80" y2="-80" x1="736" />
+        <attrtext style="alignment:RIGHT;fontsize:32;fontname:Arial" attrname="PinName" x="728" y="-16" type="pin P2CODE5" />
+        <line x2="800" y1="-16" y2="-16" x1="736" />
+        <attrtext style="alignment:RIGHT;fontsize:32;fontname:Arial" attrname="PinName" x="728" y="48" type="pin P2CODE6" />
+        <line x2="800" y1="48" y2="48" x1="736" />
+        <attrtext style="alignment:RIGHT;fontsize:32;fontname:Arial" attrname="PinName" x="728" y="112" type="pin P2CODE7" />
+        <line x2="800" y1="112" y2="112" x1="736" />
+        <rect width="672" x="64" y="-1212" height="1800" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="396" y="-1248" type="symbol" />
+        <attrtext style="fontsize:32;fontname:Arial" attrname="PinName" x="72" y="-880" type="pin CODERWD(3:7)" />
+        <rect width="64" x="0" y="-892" height="24" />
+        <line x2="0" y1="-880" y2="-880" x1="64" />
+        <attrtext style="fontsize:32;fontname:Arial" attrname="PinName" x="72" y="-720" type="pin ENCPOSN0" />
+        <line x2="0" y1="-720" y2="-720" x1="64" />
+        <attrtext style="fontsize:32;fontname:Arial" attrname="PinName" x="72" y="-656" type="pin ENCPOSN1" />
+        <line x2="0" y1="-656" y2="-656" x1="64" />
+        <attrtext style="fontsize:32;fontname:Arial" attrname="PinName" x="72" y="-1040" type="pin PSEL1" />
+        <line x2="0" y1="-1040" y2="-1040" x1="64" />
+        <attrtext style="fontsize:32;fontname:Arial" attrname="PinName" x="72" y="-1120" type="pin PSEL0" />
+        <line x2="0" y1="-1120" y2="-1120" x1="64" />
+        <attrtext style="fontsize:32;fontname:Arial" attrname="PinName" x="72" y="-352" type="pin BRWD2" />
+        <line x2="0" y1="-352" y2="-352" x1="64" />
+        <attrtext style="fontsize:32;fontname:Arial" attrname="PinName" x="72" y="-288" type="pin BRWD3" />
+        <line x2="0" y1="-288" y2="-288" x1="64" />
+        <attrtext style="fontsize:32;fontname:Arial" attrname="PinName" x="72" y="-480" type="pin BRWD0" />
+        <line x2="0" y1="-480" y2="-480" x1="64" />
+        <attrtext style="fontsize:32;fontname:Arial" attrname="PinName" x="72" y="-416" type="pin BRWD1" />
+        <line x2="0" y1="-416" y2="-416" x1="64" />
+        <attrtext style="fontsize:32;fontname:Arial" attrname="PinName" x="72" y="-112" type="pin TESTP2SEL0" />
+        <line x2="0" y1="-112" y2="-112" x1="64" />
+        <attrtext style="fontsize:32;fontname:Arial" attrname="PinName" x="72" y="-48" type="pin TESTP2SEL1" />
+        <line x2="0" y1="-48" y2="-48" x1="64" />
+        <attrtext style="fontsize:32;fontname:Arial" attrname="PinName" x="72" y="16" type="pin TESTADD" />
+        <line x2="0" y1="16" y2="16" x1="64" />
+        <attrtext style="fontsize:32;fontname:Arial" attrname="PinName" x="72" y="192" type="pin STDIGEQCD" />
+        <line x2="0" y1="192" y2="192" x1="64" />
+        <attrtext style="fontsize:32;fontname:Arial" attrname="PinName" x="72" y="272" type="pin CLEARP2FFS" />
+        <line x2="0" y1="272" y2="272" x1="64" />
+        <attrtext style="fontsize:32;fontname:Arial" attrname="PinName" x="72" y="352" type="pin CLEAR" />
+        <line x2="0" y1="352" y2="352" x1="64" />
+        <attrtext style="fontsize:32;fontname:Arial" attrname="PinName" x="72" y="432" type="pin SYSCLK" />
+        <line x2="0" y1="432" y2="432" x1="64" />
+        <attrtext style="fontsize:32;fontname:Arial" attrname="PinName" x="72" y="512" type="pin P2CLK" />
+        <line x2="0" y1="512" y2="512" x1="64" />
+        <attrtext style="alignment:RIGHT;fontsize:32;fontname:Arial" attrname="PinName" x="728" y="-640" type="pin BRWDEQCD" />
+        <line x2="800" y1="-640" y2="-640" x1="736" />
+        <attrtext style="alignment:RIGHT;fontsize:32;fontname:Arial" attrname="PinName" x="728" y="-576" type="pin DIGEQCDADD" />
+        <line x2="800" y1="-576" y2="-576" x1="736" />
+    </graph>
+</symbol>

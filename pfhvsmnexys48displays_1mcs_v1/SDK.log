@@ -1,0 +1,17 @@
+14:01:58.313 INFO  - Project 'hw_platform_0' created. You can now create BSPs and application projects targeting this hardware platform. 
+14:12:38.180 INFO  - Project hw_platform_0's source hardware specification located at C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ipcore_dir\microblaze_mcs_sdk.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+14:12:39.158 INFO  - Project hw_platform_0's source hardware specification location will not be monitored anymore. 
+14:22:35.742 INFO  - Copied contents of C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ipcore_dir\microblaze_mcs_sdk.xml into \hw_platform_0\system.xml. 
+14:22:35.754 INFO  - Copied contents of C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ipcore_dir\microblaze_mcs.bmm into \hw_platform_0\system_bd.bmm. 
+14:22:35.890 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+14:22:38.248 INFO  - Updating hardware inferred compiler options for read_lines. 
+14:22:38.278 INFO  - Clearing existing target manager status. 
+14:31:58.888 INFO  - Project hw_platform_0's source hardware specification located at C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ipcore_dir\microblaze_mcs_sdk.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+14:34:14.146 INFO  - Copied contents of C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ipcore_dir\microblaze_mcs_sdk.xml into \hw_platform_0\system.xml. 
+14:34:14.176 INFO  - Copied contents of C:\Users\Steven\Desktop\pfhvsmnexys48displays_1mcs\ipcore_dir\microblaze_mcs.bmm into \hw_platform_0\system_bd.bmm. 
+14:34:14.307 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+14:34:35.255 INFO  - Updating hardware inferred compiler options for read_lines. 
+14:34:35.273 INFO  - Clearing existing target manager status. 
+11:26:28.155 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

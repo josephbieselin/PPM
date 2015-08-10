@@ -1,0 +1,137 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml ppm.twx ppm.ncd -o ppm.twr ppm.pcf -ucf ppm.ucf
+
+Design file:              ppm.ncd
+Physical constraint file: ppm.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock CLOCK_NP2B
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK_NP2B     |    1.595|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+P1ADD_NP2B     |A0_NB2P        |   13.137|
+P1ADD_NP2B     |A1_NB2P        |   13.446|
+P1ADD_NP2B     |A2_NB2P        |   14.127|
+P1ADD_NP2B     |A3_NB2P        |   13.589|
+P1ADD_NP2B     |ADD_NB2P       |   11.400|
+P1ADD_NP2B     |RD0_NB2P       |    7.946|
+P1PLAY_NP2B    |CA_NB2P        |   11.832|
+P1PLAY_NP2B    |CB_NB2P        |   11.883|
+P1PLAY_NP2B    |CC_NB2P        |   12.143|
+P1PLAY_NP2B    |CD_NB2P        |   12.824|
+P1PLAY_NP2B    |CE_NB2P        |   11.504|
+P1PLAY_NP2B    |CF_NB2P        |   11.603|
+P1PLAY_NP2B    |CG_NB2P        |   12.276|
+P1SEL0_NP2B    |A0_NB2P        |   13.038|
+P1SEL0_NP2B    |A1_NB2P        |   13.347|
+P1SEL0_NP2B    |A2_NB2P        |   14.028|
+P1SEL0_NP2B    |A3_NB2P        |   13.490|
+P1SEL0_NP2B    |ADD_NB2P       |   11.301|
+P1SEL0_NP2B    |RD0_NB2P       |    7.662|
+P1SEL0_NP2B    |RD1_NB2P       |    8.199|
+P1SEL0_NP2B    |RD2_NB2P       |    7.726|
+P1SEL0_NP2B    |RD3_NB2P       |    7.788|
+P1SEL1_NP2B    |A0_NB2P        |   13.195|
+P1SEL1_NP2B    |A1_NB2P        |   13.504|
+P1SEL1_NP2B    |A2_NB2P        |   14.185|
+P1SEL1_NP2B    |A3_NB2P        |   13.647|
+P1SEL1_NP2B    |ADD_NB2P       |   11.458|
+P1SEL1_NP2B    |RD0_NB2P       |    7.819|
+P1SEL1_NP2B    |RD1_NB2P       |    8.356|
+P1SEL1_NP2B    |RD2_NB2P       |    7.883|
+P1SEL1_NP2B    |RD3_NB2P       |    7.945|
+P1SEL2_NP2B    |A0_NB2P        |   13.417|
+P1SEL2_NP2B    |A1_NB2P        |   13.726|
+P1SEL2_NP2B    |A2_NB2P        |   14.407|
+P1SEL2_NP2B    |A3_NB2P        |   13.869|
+P1SEL2_NP2B    |ADD_NB2P       |   11.680|
+P1SEL2_NP2B    |RD0_NB2P       |    8.041|
+P1SEL2_NP2B    |RD1_NB2P       |    8.578|
+P1SEL2_NP2B    |RD2_NB2P       |    8.105|
+P1SEL2_NP2B    |RD3_NB2P       |    8.167|
+P1SEL3_NP2B    |A0_NB2P        |   13.423|
+P1SEL3_NP2B    |A1_NB2P        |   13.732|
+P1SEL3_NP2B    |A2_NB2P        |   14.413|
+P1SEL3_NP2B    |A3_NB2P        |   13.875|
+P1SEL3_NP2B    |ADD_NB2P       |   11.686|
+P1SEL3_NP2B    |RD0_NB2P       |    8.047|
+P1SEL3_NP2B    |RD1_NB2P       |    8.584|
+P1SEL3_NP2B    |RD2_NB2P       |    8.111|
+P1SEL3_NP2B    |RD3_NB2P       |    8.173|
+SHPTS_NP2B     |A0_NB2P        |    8.874|
+SHPTS_NP2B     |A1_NB2P        |    9.183|
+SHPTS_NP2B     |A2_NB2P        |    9.864|
+SHPTS_NP2B     |A3_NB2P        |    9.326|
+SHPTS_NP2B     |CA_NB2P        |   11.914|
+SHPTS_NP2B     |CB_NB2P        |   11.965|
+SHPTS_NP2B     |CC_NB2P        |   12.225|
+SHPTS_NP2B     |CD_NB2P        |   12.906|
+SHPTS_NP2B     |CE_NB2P        |   11.586|
+SHPTS_NP2B     |CF_NB2P        |   11.685|
+SHPTS_NP2B     |CG_NB2P        |   12.358|
+TRD1_NP2B      |A0_NB2P        |   13.120|
+TRD1_NP2B      |A1_NB2P        |   13.429|
+TRD1_NP2B      |A2_NB2P        |   14.110|
+TRD1_NP2B      |A3_NB2P        |   13.572|
+TRD1_NP2B      |ADD_NB2P       |   11.383|
+TRD1_NP2B      |RD1_NB2P       |    8.281|
+TRD2_NP2B      |A0_NB2P        |   13.161|
+TRD2_NP2B      |A1_NB2P        |   13.470|
+TRD2_NP2B      |A2_NB2P        |   14.151|
+TRD2_NP2B      |A3_NB2P        |   13.613|
+TRD2_NP2B      |ADD_NB2P       |   11.424|
+TRD2_NP2B      |RD2_NB2P       |    7.900|
+TRD3_NP2B      |A0_NB2P        |   12.345|
+TRD3_NP2B      |A1_NB2P        |   12.654|
+TRD3_NP2B      |A2_NB2P        |   13.335|
+TRD3_NP2B      |A3_NB2P        |   12.797|
+TRD3_NP2B      |ADD_NB2P       |   10.608|
+TRD3_NP2B      |RD3_NB2P       |    7.616|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Jul 23 16:11:44 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 613 MB
+
+
+

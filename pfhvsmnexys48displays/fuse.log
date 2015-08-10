@@ -1,0 +1,90 @@
+Running: C:\Xilinx\12.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o D:/work/academic/cs2204/fall11/labs/pfhvsm/ppm_isim_beh.exe -prj D:/work/academic/cs2204/fall11/labs/pfhvsm/ppm_beh.prj work.ppm 
+ISim M.81d (signature 0x12940baa)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/work/academic/cs2204/fall11/labs/pfhvsm/X74_153.vhf" into library work
+Parsing VHDL file "D:/work/academic/cs2204/fall11/labs/pfhvsm/u74_157.vhf" into library work
+Parsing VHDL file "D:/work/academic/cs2204/fall11/labs/pfhvsm/ppm.vhf" into library work
+Starting static elaboration
+Completed static elaboration
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package numeric_std from library ieee
+Using precompiled package textio from library std
+Using precompiled package vital_timing from library ieee
+Using precompiled package vital_primitives from library ieee
+Compiling package vcomponents
+Compiling package vpkg
+Compiling architecture obuf_v of entity obuf [\OBUF("DONT_CARE",12,"DEFAULT","...]
+Compiling architecture buf_v of entity buf [buf_default]
+Compiling architecture ibuf_v of entity ibuf [\IBUF("DONT_CARE","0",true,"AUTO...]
+Compiling architecture bufg_v of entity bufg [bufg_default]
+Compiling architecture or2_v of entity or2 [or2_default]
+Compiling architecture and2b1_v of entity and2b1 [and2b1_default]
+Compiling architecture and2_v of entity and2 [and2_default]
+Compiling architecture and3b1_v of entity and3b1 [and3b1_default]
+Compiling architecture xor2_v of entity xor2 [xor2_default]
+Compiling architecture fdce_v of entity fdce [\FDCE('0')\]
+Compiling architecture behavioral of entity ftce_mxilinx_ppm [\FTCE_MXILINX_ppm('0')\]
+Compiling architecture vcc_v of entity vcc [vcc_default]
+Compiling architecture behavioral of entity cb2ce_mxilinx_ppm [cb2ce_mxilinx_ppm_default]
+Compiling architecture fdc_v of entity fdc [\FDC('0')\]
+Compiling architecture or3_v of entity or3 [or3_default]
+Compiling architecture and3b2_v of entity and3b2 [and3b2_default]
+Compiling architecture or4_v of entity or4 [or4_default]
+Compiling architecture nor2_v of entity nor2 [nor2_default]
+Compiling architecture and3_v of entity and3 [and3_default]
+Compiling architecture behavioral of entity m2_1_mxilinx_ppm [m2_1_mxilinx_ppm_default]
+Compiling architecture behavioral of entity ftclex_mxilinx_ppm [\FTCLEX_MXILINX_ppm('0')\]
+Compiling architecture and4_v of entity and4 [and4_default]
+Compiling architecture behavioral of entity cb4cle_mxilinx_ppm [cb4cle_mxilinx_ppm_default]
+Compiling architecture and4b1_v of entity and4b1 [and4b1_default]
+Compiling architecture and4b2_v of entity and4b2 [and4b2_default]
+Compiling architecture and4b3_v of entity and4b3 [and4b3_default]
+Compiling architecture behavioral of entity d3_8e_mxilinx_ppm [d3_8e_mxilinx_ppm_default]
+Compiling architecture and5_v of entity and5 [and5_default]
+Compiling architecture behavioral of entity cb16ce_mxilinx_ppm [cb16ce_mxilinx_ppm_default]
+Compiling architecture behavioral of entity fd4ce_mxilinx_ppm [fd4ce_mxilinx_ppm_default]
+Compiling architecture behavioral of entity m2_1e_mxilinx_ppm [m2_1e_mxilinx_ppm_default]
+Compiling architecture inv_v of entity inv [inv_default]
+Compiling architecture behavioral of entity u74_157_muser_ppm [u74_157_muser_ppm_default]
+Compiling architecture behavioral of entity x74_153_muser_ppm [x74_153_muser_ppm_default]
+Compiling architecture or2b1_v of entity or2b1 [or2b1_default]
+Compiling architecture behavioral of entity d2_4e_mxilinx_ppm [d2_4e_mxilinx_ppm_default]
+Compiling architecture nand2_v of entity nand2 [nand2_default]
+Compiling architecture muxf5_v of entity muxf5 [muxf5_default]
+Compiling architecture behavioral of entity m4_1e_mxilinx_ppm [m4_1e_mxilinx_ppm_default]
+Compiling architecture rom16x1_v of entity rom16x1 [\ROM16X1("0010100000010010")(0,1...]
+Compiling architecture muxf5_l_v of entity muxf5_l [muxf5_l_default]
+Compiling architecture muxf6_v of entity muxf6 [muxf6_default]
+Compiling architecture behavioral of entity m8_1e_mxilinx_ppm [m8_1e_mxilinx_ppm_default]
+Compiling architecture behavioral of entity fd8ce_mxilinx_ppm [fd8ce_mxilinx_ppm_default]
+Compiling architecture behavioral of entity cd4ce_mxilinx_ppm [cd4ce_mxilinx_ppm_default]
+Compiling architecture nor3_v of entity nor3 [nor3_default]
+Compiling architecture xnor2_v of entity xnor2 [xnor2_default]
+Compiling architecture behavioral of entity comp4_mxilinx_ppm [comp4_mxilinx_ppm_default]
+Compiling architecture muxcy_l_v of entity muxcy_l [muxcy_l_default]
+Compiling architecture muxcy_v of entity muxcy [muxcy_default]
+Compiling architecture muxcy_d_v of entity muxcy_d [muxcy_d_default]
+Compiling architecture xorcy_v of entity xorcy [xorcy_default]
+Compiling architecture fmap_v of entity fmap [fmap_default]
+Compiling architecture behavioral of entity add4_mxilinx_ppm [add4_mxilinx_ppm_default]
+Compiling architecture behavioral of entity add8_mxilinx_ppm [add8_mxilinx_ppm_default]
+Compiling architecture behavioral of entity compm8_mxilinx_ppm [compm8_mxilinx_ppm_default]
+Compiling architecture behavioral of entity compm2_mxilinx_ppm [compm2_mxilinx_ppm_default]
+Compiling architecture nor5_v of entity nor5 [nor5_default]
+Compiling architecture behavioral of entity compm4_mxilinx_ppm [compm4_mxilinx_ppm_default]
+Compiling architecture nor4_v of entity nor4 [nor4_default]
+Compiling architecture and2b2_v of entity and2b2 [and2b2_default]
+Compiling architecture or5_v of entity or5 [or5_default]
+Compiling architecture and3b3_v of entity and3b3 [and3b3_default]
+Compiling architecture behavioral of entity cb4ce_mxilinx_ppm [cb4ce_mxilinx_ppm_default]
+Compiling architecture gnd_v of entity gnd [gnd_default]
+Compiling architecture behavioral of entity ppm
+Time Resolution for simulation is 1ps.
+Waiting for 24 sub-compilation(s) to finish...
+Compiled 151 VHDL Units
+Built simulation executable D:/work/academic/cs2204/fall11/labs/pfhvsm/ppm_isim_beh.exe
+Fuse Memory Usage: 42360 KB
+Fuse CPU Usage: 1887 ms
